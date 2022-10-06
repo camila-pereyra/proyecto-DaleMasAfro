@@ -9,7 +9,10 @@
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker&display=swap" rel="stylesheet">
+    <!--BS CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
@@ -25,7 +28,7 @@
             <div class="_layer -bottom"></div>
         </div>
         <nav>
-            <ul class="navLinks">
+            <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Cronograma</a></li>
                 <li><a href="#">Inscripción</a></li>
@@ -38,7 +41,51 @@
     <!--MAIN-->
     <main>
         <!--SECTIONS-->
-        <section id="home"></section>
+        <section id="home">
+            <!--Logo home-->
+            <div class="containerImageHome">
+                <img src="images/Logo-banner-mobile.png" alt="logo dale mas afro">
+            </div>
+            <!--Info home-->
+            <div class="containerInfoHome">
+                <div class="boxInfo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-calendar-check" viewBox="0 0 16 16">
+                        <path
+                            d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                        <path
+                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                    </svg>
+                    <p>Martes 08/11</p>
+                </div>
+                <div class="boxInfo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                    </svg>
+                    <p>16 a 20 hs</p>
+                </div>
+                <div class="boxInfo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <p>Argentina</p>
+                </div>
+                <div class="boxInfo">
+                    <p>Entrada libre y gratuita</p>
+                </div>
+                <!--Boton register-->
+                <div class="containerButtonRegister">
+                    <a class="buttonRegister" href="">Regístrate</a>
+                    <img class="buttonRegisterHand" src="images/mano-btn-mobile.png" alt="manito button register">
+                </div>
+            </div>
+
+        </section>
         <section id="aboutEvent"></section>
         <section id="participation"></section>
         <section id="alliances"></section>
@@ -50,8 +97,13 @@
     </main>
     <!--FOOTER-->
     <footer></footer>
+
     <!--JS-->
     <script src="js/burgerButton.js"></script>
+    <!--BS JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
