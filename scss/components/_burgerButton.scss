@@ -1,0 +1,35 @@
+.hamburger{
+  background-color:transparent;
+	transform:translate3d(0, 0, 0);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index:1002;
+ 
+}
+._layer{
+	margin-bottom:3px;
+	border-radius:2px;
+	width:28px;
+	height:5px;
+	opacity:1;
+	transform:translate3d(0, 0, 0);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.-top{
+  background:$colorOrange
+}
+.-mid{
+  background:$colorRed;
+}
+.-bottom{
+  background:$colorLigthBlue;
+}
+.hamburger.is-active .-top{
+	transform:translateY(150%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid{
+	transform:rotate(135deg) !important;
+}
+.hamburger.is-active .-bottom{
+  opacity:0
+}
+
