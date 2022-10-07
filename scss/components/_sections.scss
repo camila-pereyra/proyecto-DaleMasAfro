@@ -3,7 +3,6 @@ section{
     width: 100%;
     text-align: center;
     font-family: $fontBlinker;
-    background-color: $colorLigthGray;
     h2{
         margin: 0;
         font-size: 24px;
@@ -21,11 +20,11 @@ section{
         line-height: 28.8px;
     }
 }
+.containerImgLine{
+    margin: 17px 0;
+}
 #participation{
     padding: 0 26px;
-    .paticipationContainerImgLine{
-        margin: 17px 0;
-    }
     #cardOne{
         background-image: url("../../images/Img-Participantes-1.png");
     }
@@ -53,7 +52,7 @@ section{
             padding: 12px 10px;
             gap: 12px;
             background: rgba(0, 0, 0, 0.5);
-            transform: translateY(70%);
+            transform: translateY(74%);
             transition: transform 500ms ease;
             text-align: justify;
             color: white;
@@ -86,6 +85,32 @@ section{
             transform: translateY(0%);
             transition-delay: 500ms;
         }
+    }   
+}
+#alliances{
+    padding: 0 26px;
+    .containerLogo{
+        margin-bottom: 30px;
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+            color:#666666;
+            margin-bottom: 20px;
+        }
+        img{
+            width: 125px;
+        }
+        .logos{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            img{
+                border-radius: 100%;
+                width: 60px;
+                margin: 5px;
+            }
+        }
     }
-    
 }
