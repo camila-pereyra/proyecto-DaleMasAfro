@@ -4,6 +4,7 @@ section{
     text-align: center;
     font-family: $fontBlinker;
     h2{
+        margin: 0;
         font-size: 24px;
         font-weight: 700;
         color: $colorOrange;
@@ -13,8 +14,77 @@ section{
 #aboutEvent{
     padding: 18px 26px;
     p{
+        margin-top: 10px;
         font-size: 18px;
         font-weight: 400;
         line-height: 28.8px;
     }
+}
+#participation{
+    padding: 0 26px;
+    .paticipationContainerImgLine{
+        margin: 17px 0;
+    }
+    #cardOne{
+        background-image: url("../../images/Img-Participantes-1.png");
+    }
+    #cardTwo{
+        background-image: url("../../images/Img-Participantes-2.png");
+    }
+    #cardThree{
+        background-image: url("../../images/Img-Participantes-3.png");
+    }
+    .cardContainer{
+        position: relative;
+        width: 100%;
+        height: 297px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 17px;
+        overflow: hidden;
+        .cardContainer__content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 12px 10px;
+            gap: 12px;
+            background: rgba(0, 0, 0, 0.5);
+            transform: translateY(70%);
+            transition: transform 500ms ease;
+            text-align: justify;
+            color: white;
+            .cardContainer__name{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                text-decoration: underline;
+                font-family: $fontBlinker;
+                font-weight: 700;
+                font-size: 24px;
+                text-transform: uppercase;
+            }
+            .cardContainer__tittle{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: $fontBlinker;
+                font-weight: 400;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            .cardContainer__body{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        &:hover .cardContainer__content{
+            transform: translateY(0%);
+            transition-delay: 500ms;
+        }
+    }
+    
 }
