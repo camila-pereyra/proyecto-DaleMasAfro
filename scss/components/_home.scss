@@ -59,6 +59,11 @@
             font-weight: 800;
             font-size: 24px;
             font-family: $fontBlinker;
+            transition: all 500ms ease;
+            &:hover{
+                background-color: $colorRedHover;
+                transition: all 500ms ease;
+            }
         }
         .buttonRegisterHand{
             width: 75px;

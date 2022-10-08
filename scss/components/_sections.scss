@@ -2,7 +2,11 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 46px;
-
+}
+@media (min-width:992px) {
+    html{
+        scroll-padding-top: 93px;
+    }
 }
 section{
     width: 100%;
@@ -149,8 +153,7 @@ section{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-bottom: 32px;
-       
+        padding-bottom: 32px;    
         span{
                 padding-left: 2px;
                 font-size: 20px;
@@ -163,12 +166,16 @@ section{
         font-weight: bold;
         text-decoration: none;
         color: $colorLigthBlue;
+        transition: all 500ms ease;
         &:visited{
             font-size: 18px;
             font-weight: bold;
             text-decoration: none;
             color: $colorLigthBlue;
         }
+        &:hover{
+            color: $colorLigthBlueHover;
+            transition: all 500ms ease;
+        }
     }
-
 }
