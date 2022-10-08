@@ -1,6 +1,8 @@
 //GRAL
-main{
+html{
     scroll-behavior: smooth;
+    scroll-padding-top: 46px;
+
 }
 section{
     width: 100%;
@@ -127,4 +129,46 @@ section{
             }
         }
     }
+}
+#previousEvent{
+    .containerPreviousEvent{
+        background-color: white;
+        padding: 16px 13px;
+        border-radius: 14px;
+    }
+    h4{
+        color: $colorOrange;
+        font-size: 20px;
+        padding-bottom: 32px;
+        margin: 0;
+    }
+    p{
+        margin: 0;
+    }
+    .containerAliadesPartPaises{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 32px;
+       
+        span{
+                padding-left: 2px;
+                font-size: 20px;
+                color: $colorRed;
+                font-weight: bold;
+        }
+    }
+    a{
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: $colorLigthBlue;
+        &:visited{
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: $colorLigthBlue;
+        }
+    }
+
 }

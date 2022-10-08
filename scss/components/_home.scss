@@ -42,12 +42,14 @@
         }
     }
     .containerButtonRegister{
+        width: 200px;
+        height: 64px;
         position: relative;
         border-radius: 40px;
         overflow: hidden;
         .buttonRegister{
-            width: 200px;
-            height: 64px;
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
