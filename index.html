@@ -20,7 +20,8 @@
     <header>
         <!--Logo-->
         <div>
-            <img src="images/Logo-header-mobile.png" alt="logo dale mas afro">
+            <img id="logoMobile" src="images/Logo-header-mobile.png" alt="logo dale mas afro">
+            <img id="logoDesktop" src="images/Logo-header-desktop.png" alt="logo dale mas afro">
         </div>
         <div class="hamburger">
             <div class="_layer -top"></div>
@@ -29,15 +30,18 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#aboutEvent">Sobre el evento</a></li>
-                <li><a href="#timeline">Cronograma</a></li>
-                <li><a href="#previousEvent">Evento anterior</a></li>
-                <li><a href="#transmission">Transmisión en vivo</a></li>
-                <li><a href="#aboutDaleMasAfro">Acerca de dale mas afro</a></li>
-                <li><a href="#inscription">Inscripción</a></li>
+                <li><a class="navLink" href="#home">Inicio</a></li>
+                <li><a class="navLink" href="#aboutEvent">Sobre el evento</a></li>
+                <li><a class="navLink" href="#timeline">Cronograma</a></li>
+                <li><a class="navLink" href="#previousEvent">Evento anterior</a></li>
+                <li><a class="navLink" href="#transmission">Transmisión en vivo</a></li>
             </ul>
         </nav>
+        <!--Boton register-->
+        <div class="containerButtonRegister">
+            <a class="buttonRegister" href="#inscription">Regístrate</a>
+            <img class="buttonRegisterHand" src="images/mano-btn-mobile.png" alt="manito button register">
+        </div>
     </header>
     <!--MAIN-->
     <main>
@@ -189,7 +193,6 @@
             </div>
         </section>
         <section id="transmission"></section>
-        <section id="aboutDaleMasAfro"></section>
         <section id="inscription"></section>
     </main>
     <!--FOOTER-->
