@@ -103,7 +103,94 @@ section{
         }   
     }
 }
-    
+#timeline{
+    background-color: white;
+    p{
+        margin: 0;
+        color: $colorOrange;
+    }
+    .tittleTimeline, .dayTimeline{
+        padding-bottom: 15px;
+    }
+    .dayTimeline{
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .containerNameLocal{
+        background-color: $colorRed;
+        color: white;
+        padding: 10px;
+        border-radius: 16px;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .containerActivity{
+        padding-bottom: 12px;
+        .activity{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 0;
+            .activityHour{
+                background-color: $colorRed;
+                color: white;
+                width: 50%;
+                border-radius: 16px;
+                padding: 10px;
+                margin: auto;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .activityInfo{
+                .activityInfoName{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $colorRed;
+                    text-transform: uppercase;
+                    padding-top: 5px;
+                }  
+                .activityInfoDescription{
+                    font-size: 20px;
+                    color: #464646;
+                }
+            }
+        }
+        .containerLineaVertical{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .lineaVertical{
+                width: 5px;
+                height: 56px;
+                background-color: $colorRed;
+                border-radius: 10px;
+            }
+        }
+    }
+    .ubicacion{
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px $colorRed;
+        border-radius: 8px;
+        padding: 11px 0;
+        p{
+            margin: 0 5px;
+            color: $colorRed;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        svg{
+            color: $colorRed;
+        }
+    }
+}
 #alliances{
     .containerLogo{
         padding-bottom: 45px;
@@ -154,6 +241,10 @@ section{
         justify-content: space-around;
         align-items: center;
         padding-bottom: 32px;    
+        flex-wrap: wrap;
+        p{
+            margin: 0 5px;
+        }
         span{
                 padding-left: 2px;
                 font-size: 20px;
@@ -176,6 +267,29 @@ section{
         &:hover{
             color: $colorLigthBlueHover;
             transition: all 500ms ease;
+        }
+    }
+}
+#transmission{
+    padding: 40px 26px 40px 26px;
+    .box-transmission{
+        background: #2C2C2C;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
+        padding: 40px;
+        h2{
+            color: white;
+        }
+        p{
+            font-weight: 400;
+            font-size: 20px;
+            color: #AAAAAA;
+            padding-bottom: 10px;
+        }
+        iframe{
+            width: 100%;
+            border-radius: 16px;
+
         }
     }
 }
