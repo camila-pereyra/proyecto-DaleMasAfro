@@ -103,6 +103,18 @@ section{
         }   
     }
 }
+@media (min-width:576px) {
+    #participation .containerCards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0px;
+
+    } 
+    .cardContainer{
+        max-width: 372px;
+        margin: 0 20px;
+    }
+}
 #timeline{
     background-color: white;
     p{
