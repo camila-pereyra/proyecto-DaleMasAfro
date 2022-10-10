@@ -104,7 +104,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e60122;
+    background-color: #D8031F;
     text-decoration: none;
     color: white;
     font-weight: 800;
@@ -152,7 +152,7 @@ nav ul li a:hover {
 }
 
 .-mid {
-  background: #e60122;
+  background: #D8031F;
 }
 
 .-bottom {
@@ -228,7 +228,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e60122;
+  background-color: #D8031F;
   text-decoration: none;
   color: white;
   font-weight: 800;
@@ -352,6 +352,93 @@ section h2 {
   transition-delay: 500ms;
 }
 
+#timeline {
+  background-color: white;
+}
+#timeline p {
+  margin: 0;
+  color: #ffa123;
+}
+#timeline .tittleTimeline, #timeline .dayTimeline {
+  padding-bottom: 15px;
+}
+#timeline .dayTimeline {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#timeline .containerNameLocal {
+  background-color: #D8031F;
+  color: white;
+  padding: 10px;
+  border-radius: 16px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+#timeline .containerActivity {
+  padding-bottom: 12px;
+}
+#timeline .containerActivity .activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0;
+}
+#timeline .containerActivity .activity .activityHour {
+  background-color: #D8031F;
+  color: white;
+  width: 50%;
+  border-radius: 16px;
+  padding: 10px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+#timeline .containerActivity .activity .activityInfo .activityInfoName {
+  font-size: 24px;
+  font-weight: 600;
+  color: #D8031F;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+#timeline .containerActivity .activity .activityInfo .activityInfoDescription {
+  font-size: 20px;
+  color: #464646;
+}
+#timeline .containerActivity .containerLineaVertical {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#timeline .containerActivity .containerLineaVertical .lineaVertical {
+  width: 5px;
+  height: 56px;
+  background-color: #D8031F;
+  border-radius: 10px;
+}
+#timeline .ubicacion {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #D8031F;
+  border-radius: 8px;
+  padding: 11px 0;
+}
+#timeline .ubicacion p {
+  margin: 0 5px;
+  color: #D8031F;
+  font-size: 20px;
+  font-weight: 600;
+}
+#timeline .ubicacion svg {
+  color: #D8031F;
+}
+
 #alliances .containerLogo {
   padding-bottom: 45px;
 }
@@ -400,11 +487,15 @@ section h2 {
   justify-content: space-around;
   align-items: center;
   padding-bottom: 32px;
+  flex-wrap: wrap;
+}
+#previousEvent .containerAliadesPartPaises p {
+  margin: 0 5px;
 }
 #previousEvent .containerAliadesPartPaises span {
   padding-left: 2px;
   font-size: 20px;
-  color: #e60122;
+  color: #D8031F;
   font-weight: bold;
 }
 #previousEvent a {
@@ -423,6 +514,72 @@ section h2 {
 #previousEvent a:hover {
   color: #217370;
   transition: all 500ms ease;
+}
+
+#transmission {
+  padding: 40px 26px 40px 26px;
+}
+#transmission .box-transmission {
+  background: #2C2C2C;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+}
+#transmission .box-transmission h2 {
+  color: white;
+}
+#transmission .box-transmission p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #AAAAAA;
+  padding-bottom: 10px;
+}
+#transmission .box-transmission iframe {
+  width: 100%;
+  border-radius: 16px;
+}
+
+footer {
+  text-align: center;
+  background-color: #D8031F;
+  padding: 32px 48px;
+  color: #ffa123;
+  font-family: "Blinker", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .contacto {
+  padding-bottom: 32px;
+}
+footer .contacto .mail {
+  color: white;
+}
+footer .logoFooter {
+  padding-bottom: 32px;
+}
+footer .redesIcons {
+  padding-top: 10px;
+}
+footer .redesIcons a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  transition: all 500ms ease;
+}
+footer .redesIcons a svg {
+  color: white;
+}
+footer .redesIcons a svg:hover {
+  color: #ffa123;
+  transition: all 500ms ease;
+}
+footer .redesIcons a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
