@@ -352,6 +352,17 @@ section h2 {
   transition-delay: 500ms;
 }
 
+@media (min-width: 576px) {
+  #participation .containerCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .cardContainer {
+    max-width: 372px;
+    margin: 0 20px;
+  }
+}
 #timeline {
   background-color: white;
 }
@@ -580,6 +591,20 @@ footer .redesIcons a svg:hover {
 footer .redesIcons a:visited {
   text-decoration: none;
   color: white;
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .contacto {
+    padding: 0;
+  }
+  footer .logoFooter {
+    padding: 0;
+    order: -1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
