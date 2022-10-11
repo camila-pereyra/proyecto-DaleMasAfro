@@ -1,0 +1,32 @@
+.modal-dialog{
+    justify-content: center;
+}
+.modal-content{
+    max-width: 377px;
+    justify-content: center;
+    align-items: center;
+    .modal-header{
+        .modal-title{
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    .modal-body{
+        p{
+            margin: 0;
+        }
+    }
+    .modal-footer{
+        .buttonContinue{
+            min-width: 200px;
+            height: 64px;
+            position: relative;
+            border-radius: 40px;
+            border: none;
+            background-color: #34A6A3;
+            font-size: 24px;
+            font-weight: 800;
+            color: white;
+        }
+    }
+}
