@@ -1,0 +1,32 @@
+#buttonFloatRegister{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 6px;
+    right: 5px;
+    z-index: 1500;
+    p{
+        margin: 0;
+        font-weight: 800;
+        color: $colorRed;
+    }
+    #buttonRegisterFloat{
+        background: $colorRed;
+        border-radius: 100%;
+        box-shadow: 3px 3px 5px black;
+        a{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width:1200px) {
+    #buttonFloatRegister{
+        display: none;
+    }
+    
+}
