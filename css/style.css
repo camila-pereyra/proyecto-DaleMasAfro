@@ -259,7 +259,7 @@ html {
 }
 section {
   width: 100%;
-  padding: 40px 26px 0 26px;
+  padding: 40px 20px 0 20px;
   text-align: center;
   font-family: "Blinker", sans-serif;
   background-color: #F5F5F5;
@@ -550,9 +550,130 @@ section h2 {
   border-radius: 16px;
 }
 
+#inscription {
+  padding: 0;
+}
+#inscription .expAfro {
+  padding: 24px 20px;
+  background-color: #217370;
+  color: white;
+  text-align: center;
+}
+#inscription .expAfro .expAfroTittle {
+  font-size: 24px;
+  font-weight: bold;
+}
+#inscription .expAfro .expAfroContent {
+  font-size: 18px;
+}
+#inscription #formInscription {
+  background-color: #ffa123;
+  padding: 28px;
+}
+#inscription #formInscription h2 {
+  color: white;
+}
+#inscription #formInscription form .formLabelImput {
+  text-align: start;
+  padding-bottom: 21px;
+}
+#inscription #formInscription form .formLabelImput label, #inscription #formInscription form .formLabelImput input, #inscription #formInscription form .formLabelImput select {
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+}
+#inscription #formInscription form .formLabelImput input {
+  border-bottom: 2px solid white !important;
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  padding: 5px;
+}
+#inscription #formInscription form .formLabelImput input::placeholder {
+  color: white;
+  font-weight: lighter;
+}
+#inscription #formInscription form .formLabelImput select {
+  border-bottom: 2px solid white !important;
+  background: transparent;
+  border: none;
+  padding: 5px;
+  font-weight: lighter;
+  outline: none;
+  color: white;
+}
+#inscription #formInscription form .formLabelImput select :focus {
+  outline: none;
+}
+#inscription #formInscription form .formLabelImput select option {
+  background-color: #ffa123;
+  border: 0;
+  color: white;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#inscription #formInscription form input:-webkit-autofill,
+#inscription #formInscription form input:-webkit-autofill:hover,
+#inscription #formInscription form input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #ffa123 inset;
+}
+#inscription #formInscription form .containerBotonRegister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#inscription #formInscription form .containerBotonRegister input {
+  width: 325px;
+  background-color: #D8031F;
+  border-radius: 40px;
+  padding: 15px;
+  border: none;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  transition: all 500ms ease;
+}
+#inscription #formInscription form .containerBotonRegister input:hover {
+  background-color: #a30e22;
+  transition: all 500ms ease;
+}
+
+.modal-dialog {
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 377px;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content .modal-header .modal-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.modal-content .modal-body p {
+  margin: 0;
+}
+.modal-content .modal-footer .buttonContinue {
+  min-width: 200px;
+  height: 64px;
+  position: relative;
+  border-radius: 40px;
+  border: none;
+  background-color: #34A6A3;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+}
+
 footer {
   text-align: center;
-  background-color: #D8031F;
+  background-color: white;
   padding: 32px 48px;
   color: #ffa123;
   font-family: "Blinker", sans-serif;
@@ -564,47 +685,37 @@ footer {
   align-items: center;
 }
 footer .contacto {
-  padding-bottom: 32px;
+  font-size: 24px;
 }
 footer .contacto .mail {
-  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  color: #D8031F;
 }
 footer .logoFooter {
-  padding-bottom: 32px;
+  padding-bottom: 35px;
 }
-footer .redesIcons {
+footer .redes {
+  padding-bottom: 35px;
+}
+footer .redes .redesIcons {
   padding-top: 10px;
 }
-footer .redesIcons a {
+footer .redes .redesIcons a {
   margin: 0 15px;
   text-decoration: none;
-  color: white;
   transition: all 500ms ease;
 }
-footer .redesIcons a svg {
-  color: white;
+footer .redes .redesIcons a svg {
+  color: #D8031F;
 }
-footer .redesIcons a svg:hover {
+footer .redes .redesIcons a svg:hover {
   color: #ffa123;
   transition: all 500ms ease;
 }
-footer .redesIcons a:visited {
+footer .redes .redesIcons a:visited {
   text-decoration: none;
-  color: white;
-}
-
-@media (min-width: 768px) {
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  footer .contacto {
-    padding: 0;
-  }
-  footer .logoFooter {
-    padding: 0;
-    order: -1;
-  }
+  color: #D8031F;
 }
 
 /*# sourceMappingURL=style.css.map */

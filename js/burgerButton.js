@@ -1,7 +1,6 @@
 // variables
 let menu = document.querySelector(".hamburger");
 let linksNav = document.querySelectorAll(".navLink");
-console.log(window.innerWidth);
 //funciones
 //cerrar menu cuando se apretan links
 const closeMenu = () => {

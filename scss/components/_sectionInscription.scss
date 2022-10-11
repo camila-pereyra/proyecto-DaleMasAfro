@@ -1,0 +1,95 @@
+#inscription{
+    padding: 0;
+    .expAfro{
+        padding: 24px 20px;
+        background-color: $colorLigthBlueHover;
+        color: white;
+        text-align: center;
+        .expAfroTittle{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .expAfroContent{
+            font-size: 18px;
+        }
+    }
+    #formInscription{
+        background-color: $colorOrange;
+        padding: 28px;
+        h2{
+            color: white;
+        }
+        form{
+            .formLabelImput{
+                text-align: start;
+                padding-bottom: 21px;
+                label, input, select{
+                    width: 100%;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 600;
+                    background-color: transparent;
+                }
+                input{
+                    border-bottom: 2px solid white !important;
+                    outline: none;
+                    background-color: transparent;
+                    border: 0;
+                    padding: 5px;
+                    &::placeholder{
+                        color: white;
+                        font-weight: lighter;
+                    }  
+                }
+                select{
+                    border-bottom: 2px solid white !important;
+                    background: transparent;
+                    border: none;
+                    padding: 5px;
+                    font-weight: lighter;
+                    outline: none;
+                    color: white;
+                    :focus{
+                        outline: none;
+                    }
+                    option{
+                        background-color: $colorOrange;
+                        border: 0;
+                        color: white;
+                        outline: none;
+                        appearance: none;
+	                    -webkit-appearance: none;
+	                    -moz-appearance: none;
+                    }
+                }  
+            }
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover, 
+            input:-webkit-autofill:focus
+            {
+            -webkit-text-fill-color: white;
+            -webkit-box-shadow: 0 0 0px 1000px $colorOrange inset;
+            }
+            .containerBotonRegister{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input{
+                    width: 325px;
+                    background-color: $colorRed;
+                    border-radius: 40px;
+                    padding: 15px;
+                    border: none;
+                    color: white;
+                    font-size: 28px;
+                    font-weight: 800;
+                    transition: all 500ms ease;
+                    &:hover{
+                        background-color: $colorRedHover;
+                        transition: all 500ms ease;
+                    }
+                }
+            }
+        }
+    }
+}
