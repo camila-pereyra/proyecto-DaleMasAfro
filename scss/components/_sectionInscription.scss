@@ -27,35 +27,44 @@
                     width: 100%;
                     color: white;
                     font-size: 16px;
-                    font-weight: 600;
                     background-color: transparent;
                 }
                 input{
-                    border-bottom: 2px solid white !important;
+                    border-bottom: 2px solid white;
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
                     outline: none;
                     background-color: transparent;
-                    border: 0;
                     padding: 5px;
+                    &:focus{
+                        background-color: white;
+                        color: black;
+                        border-radius: 10px;
+                    }
                     &::placeholder{
                         color: white;
-                        font-weight: lighter;
+                        font-weight: 300;
                     }  
                 }
                 select{
-                    border-bottom: 2px solid white !important;
+                    border-bottom: 2px solid white;
                     background: transparent;
-                    border: none;
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
                     padding: 5px;
                     font-weight: lighter;
                     outline: none;
                     color: white;
-                    :focus{
-                        outline: none;
+                    &:focus{
+                        background-color: white;
+                        color: black;
+                        border-radius: 10px;
                     }
                     option{
-                        background-color: $colorOrange;
-                        border: 0;
-                        color: white;
+                        background-color: white;
+                        color: black;
                         outline: none;
                         appearance: none;
 	                    -webkit-appearance: none;
