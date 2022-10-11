@@ -66,7 +66,7 @@ nav ul li a:hover {
   color: rgb(56, 56, 56);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   header #logoMobile {
     display: none;
   }
@@ -76,6 +76,9 @@ nav ul li a:hover {
   header nav {
     position: relative;
     display: block;
+  }
+  header nav #navInscription {
+    display: none;
   }
   header nav ul {
     display: flex;
@@ -124,10 +127,10 @@ nav ul li a:hover {
     top: 5px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   header nav ul li {
-    margin: 0 20px 0 20px;
     font-size: 18px;
+    margin: 0 10px 0 10px;
   }
 }
 .hamburger {
@@ -349,20 +352,9 @@ section h2 {
 }
 #participation .containerCards .cardContainer:hover .cardContainer__content {
   transform: translateY(0%);
-  transition-delay: 500ms;
+  transition: transform 500ms ease;
 }
 
-@media (min-width: 576px) {
-  #participation .containerCards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0px;
-  }
-  .cardContainer {
-    max-width: 372px;
-    margin: 0 20px;
-  }
-}
 #timeline {
   background-color: white;
 }
@@ -439,6 +431,7 @@ section h2 {
   border: solid 2px #D8031F;
   border-radius: 8px;
   padding: 11px 0;
+  margin-bottom: 40px;
 }
 #timeline .ubicacion p {
   margin: 0 5px;
@@ -581,36 +574,45 @@ section h2 {
   width: 100%;
   color: white;
   font-size: 16px;
-  font-weight: 600;
   background-color: transparent;
 }
 #inscription #formInscription form .formLabelImput input {
-  border-bottom: 2px solid white !important;
+  border-bottom: 2px solid white;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   outline: none;
   background-color: transparent;
-  border: 0;
   padding: 5px;
+}
+#inscription #formInscription form .formLabelImput input:focus {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
 }
 #inscription #formInscription form .formLabelImput input::placeholder {
   color: white;
-  font-weight: lighter;
+  font-weight: 300;
 }
 #inscription #formInscription form .formLabelImput select {
-  border-bottom: 2px solid white !important;
+  border-bottom: 2px solid white;
   background: transparent;
-  border: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   padding: 5px;
   font-weight: lighter;
   outline: none;
   color: white;
 }
-#inscription #formInscription form .formLabelImput select :focus {
-  outline: none;
+#inscription #formInscription form .formLabelImput select:focus {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
 }
 #inscription #formInscription form .formLabelImput select option {
-  background-color: #ffa123;
-  border: 0;
-  color: white;
+  background-color: white;
+  color: black;
   outline: none;
   appearance: none;
   -webkit-appearance: none;
@@ -716,6 +718,37 @@ footer .redes .redesIcons a svg:hover {
 footer .redes .redesIcons a:visited {
   text-decoration: none;
   color: #D8031F;
+}
+
+#buttonFloatRegister {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: fixed;
+  bottom: 6px;
+  right: 5px;
+  z-index: 1500;
+}
+#buttonFloatRegister p {
+  margin: 0;
+  font-weight: 800;
+  color: #D8031F;
+}
+#buttonFloatRegister #buttonRegisterFloat {
+  background: #D8031F;
+  border-radius: 100%;
+  box-shadow: 3px 3px 5px black;
+}
+#buttonFloatRegister #buttonRegisterFloat a img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  #buttonFloatRegister {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
