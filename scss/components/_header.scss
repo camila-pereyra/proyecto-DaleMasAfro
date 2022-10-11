@@ -1,0 +1,135 @@
+//HEADER
+header{
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    #logoDesktop{
+      display: none;
+    }
+    .containerButtonRegister{
+      display: none;
+      .buttonRegister{
+        display: none;
+      }
+      .buttonRegisterHand{
+        display: none;
+      }
+    }
+}
+nav.is_active{
+    display: block;
+    padding: 15px;
+}
+nav{
+    position: absolute;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: none;
+    top: 100%;
+    width: 100%;
+    z-index: 1001;
+    padding: 0;
+    ul{
+      padding: 0;
+      margin: 0;
+      li{
+        list-style: none;
+        text-align:center;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: $fontBlinker;
+        font-size: 18px;
+        margin-bottom: 16px;
+        a{
+          text-decoration:none;
+          color: black;
+          &:hover{
+            color: $colorBlackHover;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (min-width:992px) {
+    header{
+      #logoMobile{
+        display: none;
+      }
+      #logoDesktop{
+        display: inline;
+      }
+      nav{
+        position: relative;
+        display: block;
+        ul{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          li{
+            font-size: 15px;
+            margin: 0 7px 0 7px;
+          }
+        }
+      }
+      .hamburger{
+        display: none;
+      }
+      .containerButtonRegister{
+        display: block ;
+        min-width: 200px;
+        height: 64px;
+        position: relative;
+        border-radius: 40px;
+        overflow: hidden;
+        .buttonRegister{
+            display: block ;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $colorRed;
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+            font-size: 24px;
+            font-family: $fontBlinker;
+            transition: all 500ms ease;
+            &:hover{
+                background-color: $colorRedHover;
+                transition: all 500ms ease;
+            }
+        }
+        .buttonRegisterHand{
+            display: block ;
+            width: 75px;
+            position: absolute;
+            right: -18px;
+            top: 5px;
+        }
+      }
+    }    
+  }
+  @media (min-width:1200px) {
+    header{
+      nav{
+        ul{
+          li{
+            margin: 0 20px 0 20px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  

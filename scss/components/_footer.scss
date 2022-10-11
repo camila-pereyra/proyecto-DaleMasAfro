@@ -1,0 +1,46 @@
+footer{
+    text-align: center;
+    background-color:white;
+    padding: 32px 48px;
+    color: $colorOrange;
+    font-family: $fontBlinker;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contacto{ 
+        font-size: 24px; 
+        .mail{
+            font-size: 18px;
+            font-weight: 500;
+            color: $colorRed;
+        }
+    }
+    .logoFooter{
+        padding-bottom: 35px;
+    }
+    .redes{
+        padding-bottom: 35px;
+        .redesIcons{
+            padding-top: 10px;
+            a{
+                margin: 0 15px;
+                text-decoration: none;
+                transition: all 500ms ease;
+                svg{
+                    color: $colorRed;
+                    &:hover{
+                        color: $colorOrange ;
+                        transition: all 500ms ease;
+                    }
+                }
+                &:visited{
+                    text-decoration: none;
+                    color: $colorRed;
+                }
+            }
+        }
+    }
+}
