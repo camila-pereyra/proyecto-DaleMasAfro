@@ -15,7 +15,7 @@ function toggleMenu(event) {
 }
 //En caso de tener el menu hamburgesa abierto si la pantalla excede los 768px dejar de mostrar el nav (quitarle la clase is_active)
 const screenWidth = () => {
-  if (window.innerWidth > 992) {
+  if (window.innerWidth > 1200) {
     closeMenu();
   }
 };
