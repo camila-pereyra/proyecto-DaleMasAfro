@@ -43,16 +43,16 @@ nav{
       li{
         list-style: none;
         text-align:center;
-        font-weight: bold;
+        font-weight: 700;
         text-transform: uppercase;
         font-family: $fontBlinker;
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 16px;
         a{
           text-decoration:none;
           color: black;
           &:hover{
-            color: $colorBlackHover;
+            color: $colorOrange;
           }
         }
       }
@@ -79,8 +79,19 @@ nav{
           align-items: center;
           li{
             font-size: 15px;
-            margin: 0 7px 0 7px;
+            margin: 0;
+            text-align: center;
+            a{
+              width: 100%;
+              padding: 10px;
+              margin: 0;
+              &:hover{
+                background-color: $colorOrange;
+                color: white;
+              }
+            }
           }
+          
         }
       }
       .hamburger{
@@ -122,7 +133,7 @@ nav{
       }
     }    
   }
- @media (min-width:1400px){
+ @media (min-width:1450px){
     header{
       nav{
         ul{
