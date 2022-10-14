@@ -13,7 +13,8 @@
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!--BS CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -142,9 +143,7 @@
                         <p class="cardContainer__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
                             labore vero blanditiis impedit sunt. Totam sapiente nisi aliquam dolor fugit vitae
                             voluptatibus
-                            ad. Illo, tenetur sint similique sapiente dolores ut ab recusandae consectetur, illum
-                            aspernatur
-                            dicta eum dolorum impedit obcaecati.
+                            ad. Illo, tenetur sint similique sapiente dolores ut ab recusandae consectetur.
                         </p>
                     </div>
                 </div>
@@ -157,9 +156,7 @@
                         <p class="cardContainer__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
                             labore vero blanditiis impedit sunt. Totam sapiente nisi aliquam dolor fugit vitae
                             voluptatibus
-                            ad. Illo, tenetur sint similique sapiente dolores ut ab recusandae consectetur, illum
-                            aspernatur
-                            dicta eum dolorum impedit obcaecati.
+                            ad. Illo, tenetur sint similique sapiente dolores ut ab recusandae consectetur.
                         </p>
                     </div>
                 </div>
@@ -172,9 +169,7 @@
                         <p class="cardContainer__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
                             labore vero blanditiis impedit sunt. Totam sapiente nisi aliquam dolor fugit vitae
                             voluptatibus
-                            ad. Illo, tenetur sint similique sapiente dolores ut ab recusandae consectetur, illum
-                            aspernatur
-                            dicta eum dolorum impedit obcaecati.
+                            ad. Illo, tenetur sint similique sapiente dolores ut ab recusandae consectetur.
                         </p>
                     </div>
                 </div>
@@ -187,17 +182,19 @@
                 <img src="images/Rallita-mobile.png" alt="imagen decorativa linea">
             </div>
             <!--Container de impulsado por... Nos apoya...Nos acompañan...-->
-            <div class="containerLogo">
-                <h4>Impulsado por</h4>
-                <img src="images/image 11.png" alt="">
+            <div class="boxImpulsadoApoya">
+                <div class="containerLogo">
+                    <h4>Impulsado por</h4>
+                    <img src="images/image 11.png" alt="">
+                </div>
+                <div class="containerLogo">
+                    <h4>Nos apoya</h4>
+                    <img src="images/image 12.png" alt="">
+                </div>
             </div>
-            <div class="containerLogo">
-                <h4>Nos apoya</h4>
-                <img src="images/image 12.png" alt="">
-            </div>
-            <div class="containerLogo">
+            <div id="containerLogosAcompañan">
                 <h4>Nos acompañan</h4>
-                <div class="logos">
+                <div id="logos">
                     <img src="images/placeholder.png" alt="">
                     <img src="images/placeholder.png" alt="">
                     <img src="images/placeholder.png" alt="">
@@ -209,60 +206,106 @@
         </section>
         <!--SECTION Timeline-->
         <section id="timeline">
-            <h2 class="tittleTimeline">Cronograma</h2>
-            <div class="containerImgLine">
-                <img src="images/Rallita-mobile.png" alt="imagen decorativa linea">
+            <div class="boxTimeLine">
+                <h2>Cronograma</h2>
+                <div class="containerImgLine">
+                    <img src="images/Rallita-mobile.png" alt="imagen decorativa linea">
+                </div>
+                <p class="dayTimeline">Martes 08/11</p>
+                <div class="containerNameLocal">Centro Cultural Kirchner</div>
+                <iframe id="mapCCK"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.021910198231!2d-58.37191778423679!3d-34.60360746500044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3353283598701%3A0xff14e7edde2f5152!2sCentro%20Cultural%20Kirchner%20(CCK)!5e0!3m2!1ses-419!2sar!4v1665762058766!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <p class="dayTimeline">Martes 08/11</p>
-            <div class="containerNameLocal">Centro Cultural Kirchner</div>
             <!--Container actividades-->
             <div class="containerActivity">
                 <!--Actividad-->
                 <div class="activity">
-                    <div class="activityHour">
-                        16:00 hs
+                    <div class="hour">
+                        <div class="activityHour">
+                            16:00 hs
+                        </div>
+                        <!--Separador desktop-->
+                        <div class="containerLineaVertical">
+                            <div class="lineaVertical"></div>
+                        </div>
                     </div>
                     <div class="activityInfo">
                         <p class="activityInfoName">Actividad</p>
                         <p class="activityInfoDescription">Corta descripcion</p>
                     </div>
-                </div>
-                <!--Separador-->
-                <div class="containerLineaVertical">
-                    <div class="lineaVertical"></div>
+                    <!--Separador mobile-->
+                    <div class="containerLineaVertical">
+                        <div class="lineaVertical"></div>
+                    </div>
                 </div>
                 <!--Actividad-->
                 <div class="activity">
-                    <div class="activityHour">
-                        17:00 hs
+                    <div class="hour">
+                        <div class="activityHour">
+                            17:00 hs
+                        </div>
+                        <!--Separador desktop-->
+                        <div class="containerLineaVertical">
+                            <div class="lineaVertical"></div>
+                        </div>
                     </div>
                     <div class="activityInfo">
                         <p class="activityInfoName">Actividad</p>
                         <p class="activityInfoDescription">Corta descripcion</p>
                     </div>
-                </div>
-                <!--Separador-->
-                <div class="containerLineaVertical">
-                    <div class="lineaVertical"></div>
+                    <!--Separador mobile-->
+                    <div class="containerLineaVertical">
+                        <div class="lineaVertical"></div>
+                    </div>
                 </div>
                 <!--Actividad-->
                 <div class="activity">
-                    <div class="activityHour">
-                        18:00 hs
+                    <div class="hour">
+                        <div class="activityHour">
+                            18:00 hs
+                        </div>
+                        <!--Separador desktop-->
+                        <div class="containerLineaVertical">
+                            <div class="lineaVertical"></div>
+                        </div>
                     </div>
                     <div class="activityInfo">
                         <p class="activityInfoName">Actividad</p>
                         <p class="activityInfoDescription">Corta descripcion</p>
                     </div>
-                </div>
-                <!--Separador-->
-                <div class="containerLineaVertical">
-                    <div class="lineaVertical"></div>
+                    <!--Separador mobile-->
+                    <div class="containerLineaVertical">
+                        <div class="lineaVertical"></div>
+                    </div>
                 </div>
                 <!--Actividad-->
                 <div class="activity">
-                    <div class="activityHour">
-                        19:00 hs
+                    <div class="hour">
+                        <div class="activityHour">
+                            19:00 hs
+                        </div>
+                        <!--Separador desktop-->
+                        <div class="containerLineaVertical">
+                            <div class="lineaVertical"></div>
+                        </div>
+                    </div>
+                    <div class="activityInfo">
+                        <p class="activityInfoName">Actividad</p>
+                        <p class="activityInfoDescription">Corta descripcion</p>
+                    </div>
+                    <!--Separador mobile-->
+                    <div class="containerLineaVertical">
+                        <div class="lineaVertical"></div>
+                    </div>
+                </div>
+                <!--Actividad-->
+                <div class="activity">
+                    <div class="hour">
+                        <div class="activityHour">
+                            20:00 hs
+                        </div>
                     </div>
                     <div class="activityInfo">
                         <p class="activityInfoName">Actividad</p>
@@ -283,47 +326,59 @@
         </section>
         <!--SECTION aboutDaleMasAfro-->
         <section id="aboutDaleMasAfro">
-            <h2>Acerca de dale más afro</h2>
-            <div class="containerImgLine">
-                <img src="images/Rallita-mobile.png" alt="imagen decorativa linea">
+            <div class="boxImg">
+                <img src="images/placeholder_image.png" alt="">
             </div>
-            <p class="paragraphDescriptionPaddingBottom">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dolor, nulla sint corporis nemo numquam laborum
-                omnis cum impedit illo illum ad error, quidem aliquid. Delectus dolorum voluptas, tenetur quo saepe
-                assumenda similique molestiae earum harum aspernatur expedita sapiente error quae, aperiam unde minus
-                illum beatae? Aliquid, placeat assumenda. Aspernatur, sit!</p>
-            <a class="buttonSecundary" href="https://dalemasafro.org/">Conoce más <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                    </svg>
-                </span></a>
+            <div class="boxInfo">
+                <h2>Acerca de dale más afro</h2>
+                <div class="containerImgLine">
+                    <img src="images/Rallita-mobile.png" alt="imagen decorativa linea">
+                </div>
+                <p class="paragraphDescriptionPaddingBottom">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolor, nulla sint corporis nemo numquam laborum
+                    omnis cum impedit illo illum ad error, quidem aliquid. Delectus dolorum voluptas, tenetur quo saepe
+                    assumenda similique molestiae earum harum aspernatur expedita sapiente error quae, aperiam unde
+                    minus
+                    illum beatae? Aliquid, placeat assumenda. Aspernatur, sit!</p>
+                <a class="buttonSecundary" href="https://dalemasafro.org/">Conoce más <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </span></a>
+            </div>
         </section>
         <!--SECTION PreviusEvent -->
         <section id="previousEvent">
-            <h2>Evento anterior</h2>
-            <div class="containerImgLine">
-                <img src="images/Rallita-mobile.png" alt="imagen decorativa linea">
+            <div class="boxInfo">
+                <h2>Evento anterior</h2>
+                <div class="containerImgLine">
+                    <img src="images/Rallita-mobile.png" alt="imagen decorativa linea">
+                </div>
+                <h4>Festival virtual por el Dia Mundial de la Cultura Afro</h4>
+                <div class="containerAliadesPartPaises">
+                    <p>Aliades<span>X X</span></p>
+                    <p>Participantes<span>X X</span></p>
+                    <p>Países<span>X X</span></p>
+                </div>
+                <p class="paragraphDescriptionPaddingBottom">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolor, nulla sint corporis nemo numquam laborum
+                    omnis cum impedit illo illum ad error, quidem aliquid. Delectus dolorum voluptas, tenetur quo saepe
+                    assumenda similique molestiae earum harum aspernatur expedita sapiente error quae, aperiam unde
+                    minus
+                    illum beatae? Aliquid, placeat assumenda. Aspernatur, sit!</p>
+                <a class="buttonSecundary" href="https://dalemasafro.org/festival/">Míralo aquí<span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </span></a>
             </div>
-            <h4>Festival virtual por el Dia Mundial de la Cultura Afro</h4>
-            <div class="containerAliadesPartPaises">
-                <p>Aliades<span>X X</span></p>
-                <p>Participantes<span>X X</span></p>
-                <p>Países<span>X X</span></p>
+            <div class="boxImg">
+                <img src="images/placeholder_image.png" alt="">
             </div>
-            <p class="paragraphDescriptionPaddingBottom">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dolor, nulla sint corporis nemo numquam laborum
-                omnis cum impedit illo illum ad error, quidem aliquid. Delectus dolorum voluptas, tenetur quo saepe
-                assumenda similique molestiae earum harum aspernatur expedita sapiente error quae, aperiam unde minus
-                illum beatae? Aliquid, placeat assumenda. Aspernatur, sit!</p>
-            <a class="buttonSecundary" href="https://dalemasafro.org/festival/">Míralo aquí<span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                    </svg>
-                </span></a>
         </section>
         <!--SECTION Banner -->
         <section id="banner">
@@ -334,6 +389,7 @@
         <!--SECTION Inscription y Transmition -->
         <section id="inscriptionTransmission">
             <div class="expAfro">
+                <img src="images/Logo-registro-desktop.png" alt="">
                 <h2 class="expAfroTittle">Vive la mejor experiencia Afro</h2>
                 <p class="expAfroContent">Más que un festival. Es el punto de partida de un movimiento regional para
                     combatir el racismo,
@@ -440,7 +496,7 @@
                     <img src="images/Rallita-mobile.png" alt="imagen decorativa linea">
                 </div>
                 <p>Sumate a la transmisión en vivo del evento</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Grm8IN696LA"
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/Grm8IN696LA"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -472,7 +528,7 @@
             </div>
         </div>
         <div class="logoFooter">
-            <img src="images/Logo-footer.png" alt="">
+            <img src="images/Logo-header-desktop.png" alt="">
         </div>
         <div class="contacto">
             <h4>Podés contactarnos a:</h4>

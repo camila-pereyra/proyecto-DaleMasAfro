@@ -1,3 +1,14 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 66px;
+}
+@media (min-width: 1200px) {
+  html {
+    scroll-padding-top: 93px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -66,83 +77,6 @@ nav ul li a:hover {
   color: #ffa123;
 }
 
-@media (min-width: 1200px) {
-  header #logoMobile {
-    display: none;
-  }
-  header #logoDesktop {
-    display: inline;
-  }
-  header nav {
-    position: relative;
-    display: block;
-  }
-  header nav #navInscription {
-    display: none;
-  }
-  header nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  header nav ul li {
-    font-size: 15px;
-    margin: 0;
-    text-align: center;
-  }
-  header nav ul li a {
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-  }
-  header nav ul li a:hover {
-    background-color: #ffa123;
-    color: white;
-  }
-  header .hamburger {
-    display: none;
-  }
-  header .containerButtonRegister {
-    display: block;
-    min-width: 200px;
-    height: 64px;
-    position: relative;
-    border-radius: 40px;
-    overflow: hidden;
-  }
-  header .containerButtonRegister .buttonRegister {
-    display: block;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #D8031F;
-    text-decoration: none;
-    color: white;
-    font-weight: 800;
-    font-size: 24px;
-    font-family: "Blinker", sans-serif;
-    transition: all 500ms ease;
-  }
-  header .containerButtonRegister .buttonRegister:hover {
-    background-color: #a30e22;
-    transition: all 500ms ease;
-  }
-  header .containerButtonRegister .buttonRegisterHand {
-    display: block;
-    width: 75px;
-    position: absolute;
-    right: -18px;
-    top: 5px;
-  }
-}
-@media (min-width: 1450px) {
-  header nav ul li {
-    font-size: 18px;
-    margin: 0 10px 0 10px;
-  }
-}
 .hamburger {
   background-color: transparent;
   transform: translate3d(0, 0, 0);
@@ -216,17 +150,6 @@ nav ul li a:hover {
   color: #ffa123;
   margin: 0;
 }
-#home .homeLogo::before {
-  position: absolute;
-  content: "";
-  width: 160px;
-  height: 2px;
-  top: -8px;
-  right: 6px;
-  box-shadow: 0px 1.5px 2.8px rgba(0, 0, 0, 0.32);
-  background-color: #ffa123;
-  transform: rotate(-1.5deg);
-}
 #home .homeLogo .homeContainerImgYDaleMasAfro {
   display: flex;
   align-items: end;
@@ -250,6 +173,17 @@ nav ul li a:hover {
   line-height: 83.5%;
   text-shadow: 0px 1.5px 2.8px rgba(0, 0, 0, 0.32);
   margin: 0;
+}
+#home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerDaleMasAfro::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 2px;
+  top: -8px;
+  right: 6px;
+  box-shadow: 0px 1.5px 2.8px rgba(0, 0, 0, 0.32);
+  background-color: #ffa123;
+  transform: rotate(-1.5deg);
 }
 #home .homeInfo {
   width: 100%;
@@ -304,16 +238,6 @@ nav ul li a:hover {
   top: 5px;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 46px;
-}
-
-@media (min-width: 1200px) {
-  html {
-    scroll-padding-top: 93px;
-  }
-}
 section {
   width: 100%;
   padding: 40px 20px 0 20px;
@@ -357,7 +281,7 @@ section p {
 }
 #participation .containerCards .cardContainer {
   position: relative;
-  width: 100%;
+  max-width: 387px;
   height: 297px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -408,14 +332,10 @@ section p {
   transition: transform 500ms ease;
 }
 
-#alliances {
-  padding: 23px 20px 0 20px;
-}
 #alliances .containerLogo {
   padding: 10px 0 40px 0;
-}
-#alliances .containerLogo img {
-  width: 100%;
+  width: 125px;
+  margin: auto;
 }
 #alliances .containerLogo h4 {
   margin: 0;
@@ -425,16 +345,25 @@ section p {
   color: #666666;
 }
 #alliances .containerLogo img {
-  width: 125px;
+  width: 100%;
 }
-#alliances .containerLogo .logos {
+#alliances #containerLogosAcompañan {
+  padding: 10px 0 40px 0;
+}
+#alliances #containerLogosAcompañan h4 {
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #666666;
+}
+#alliances #containerLogosAcompañan #logos {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#alliances .containerLogo .logos img {
+#alliances #containerLogosAcompañan #logos img {
   border-radius: 100%;
   width: 60px;
   margin: 25px;
@@ -461,6 +390,9 @@ section p {
   font-size: 24px;
   font-weight: 600;
 }
+#timeline #mapCCK {
+  display: none;
+}
 #timeline .containerActivity .activity {
   display: flex;
   flex-direction: column;
@@ -468,7 +400,7 @@ section p {
   align-items: center;
   padding: 14px 0;
 }
-#timeline .containerActivity .activity .activityHour {
+#timeline .containerActivity .activity .hour .activityHour {
   background-color: #D8031F;
   color: white;
   max-width: 122px;
@@ -477,6 +409,9 @@ section p {
   padding: 10px;
   font-size: 20px;
   font-weight: 600;
+}
+#timeline .containerActivity .activity .hour .containerLineaVertical {
+  display: none;
 }
 #timeline .containerActivity .activity .activityInfo .activityInfoName {
   font-size: 24px;
@@ -490,13 +425,14 @@ section p {
   color: #464646;
   font-weight: 400;
 }
-#timeline .containerActivity .containerLineaVertical {
+#timeline .containerActivity .activity .containerLineaVertical {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 28px;
 }
-#timeline .containerActivity .containerLineaVertical .lineaVertical {
+#timeline .containerActivity .activity .containerLineaVertical .lineaVertical {
   width: 5px;
   height: 56px;
   background-color: #D8031F;
@@ -533,6 +469,10 @@ section p {
 }
 #timeline .ubicacion svg {
   color: #D8031F;
+}
+
+#aboutDaleMasAfro .boxImg, #previousEvent .boxImg {
+  display: none;
 }
 
 .paragraphDescriptionPaddingBottom {
@@ -611,6 +551,9 @@ section p {
   color: white;
   text-align: center;
   border-radius: 8px;
+}
+#inscriptionTransmission .expAfro img {
+  display: none;
 }
 #inscriptionTransmission .expAfro .expAfroTittle {
   color: white;
@@ -751,9 +694,9 @@ section p {
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   padding: 20px;
-  bottom: -350px;
-  left: 10%;
-  width: 80%;
+  bottom: -400px;
+  left: 2%;
+  width: 96%;
 }
 #transmission h2 {
   color: white;
@@ -765,6 +708,9 @@ section p {
 #transmission iframe {
   width: 100%;
   border-radius: 16px;
+  border-radius: 16px;
+  max-width: 640px;
+  max-height: 360px;
 }
 
 footer {
@@ -852,6 +798,411 @@ footer .redes .redesIcons a:visited {
 @media (min-width: 1200px) {
   #buttonFloatRegister {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    scroll-padding-top: 93px;
+  }
+}
+@media (min-width: 1200px) {
+  header #logoMobile {
+    display: none;
+  }
+  header #logoDesktop {
+    display: inline;
+  }
+  header nav {
+    position: relative;
+    display: block;
+  }
+  header nav #navInscription {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul li {
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+  }
+  header nav ul li a {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  header nav ul li a:hover {
+    background-color: #ffa123;
+    color: white;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header .containerButtonRegister {
+    display: block;
+    min-width: 200px;
+    height: 64px;
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+  header .containerButtonRegister .buttonRegister {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D8031F;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    font-family: "Blinker", sans-serif;
+    transition: all 500ms ease;
+  }
+  header .containerButtonRegister .buttonRegister:hover {
+    background-color: #a30e22;
+    transition: all 500ms ease;
+  }
+  header .containerButtonRegister .buttonRegisterHand {
+    display: block;
+    width: 75px;
+    position: absolute;
+    right: -18px;
+    top: 5px;
+  }
+}
+@media (min-width: 1450px) {
+  header nav ul li {
+    font-size: 18px;
+    margin: 0 10px 0 10px;
+  }
+}
+@media (min-width: 1200px) {
+  #home .homeLogo {
+    margin: 70px 0 110px 0;
+  }
+  #home .homeLogo .homeLogoTittle {
+    position: absolute;
+    top: 75px;
+    left: -65px;
+    font-size: 80px;
+  }
+  #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerImg {
+    max-width: 59px;
+  }
+  #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerImg img {
+    width: 100%;
+  }
+  #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerDaleMasAfro {
+    max-width: 75px;
+  }
+  #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerDaleMasAfro h1 {
+    font-size: 32px !important;
+  }
+  #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerDaleMasAfro::before {
+    max-width: 69px;
+    max-height: 1px;
+  }
+  #home .homeInfo {
+    max-width: 380px;
+    padding: 16px;
+    background: rgba(103, 103, 103, 0.44);
+    backdrop-filter: blur(2.47826px);
+    border-radius: 13.2174px;
+  }
+  #home .homeInfo .boxInfo p {
+    font-size: 30px;
+  }
+  #home .containerButtonRegister {
+    width: 320px;
+    height: 88px;
+    border-radius: 66px;
+    margin-top: 12px;
+  }
+  #home .containerButtonRegister .buttonRegister {
+    font-weight: 900;
+    font-size: 40px;
+  }
+  #home .containerButtonRegister .buttonRegisterHand {
+    width: 98px;
+    position: absolute;
+    right: -23px;
+    top: 10px;
+  }
+}
+@media (min-width: 576px) {
+  section h2 {
+    font-size: 35px;
+  }
+  section p {
+    line-height: 30px;
+  }
+  .containerImgLine {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  section {
+    padding: 76px 120px 0 120px;
+  }
+  #timeline {
+    padding: 76px 120px;
+  }
+  #banner {
+    padding: 76px 120px;
+  }
+  #inscriptionTransmission {
+    padding: 76px 120px 300px 120px;
+  }
+}
+@media (min-width: 768px) {
+  section h2 {
+    font-size: 48px;
+  }
+  section p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .containerImgLine {
+    margin-bottom: 20px;
+  }
+  #participation .containerCards {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #participation .containerCards .cardContainer {
+    margin: 20px 25px;
+  }
+  #alliances .boxImpulsadoApoya {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #alliances .containerLogo {
+    padding: 0 0 76px 0;
+    min-width: 250px;
+  }
+  #alliances .containerLogo h4 {
+    padding-bottom: 32px;
+    font-size: 32px;
+  }
+  #alliances #containerLogosAcompañan {
+    padding: 0 0 76px 0;
+  }
+  #alliances #containerLogosAcompañan h4 {
+    padding-bottom: 32px;
+    font-size: 32px;
+  }
+  #alliances #containerLogosAcompañan #logos img {
+    border-radius: 100%;
+    width: 104px;
+    margin: 50px;
+  }
+  #timeline {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #timeline .ubicacion {
+    display: none;
+  }
+  #timeline .containerImgLine {
+    display: none;
+  }
+  #timeline .boxTimeLine {
+    width: 50%;
+    text-align: left;
+  }
+  #timeline .boxTimeLine .dayTimeline {
+    font-size: 22px;
+    padding: 22px 0;
+  }
+  #timeline .boxTimeLine .containerNameLocal {
+    margin: 0;
+    background-color: transparent;
+    color: #D8031F;
+    padding: 0 0 40px 0;
+    border-radius: 0px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  #timeline .boxTimeLine #mapCCK {
+    display: block;
+    width: 100%;
+  }
+  #timeline .containerActivity {
+    width: 50%;
+  }
+  #timeline .containerActivity .activity {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 0;
+  }
+  #timeline .containerActivity .activity .hour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #timeline .containerActivity .activity .hour .activityHour {
+    margin: 0;
+  }
+  #timeline .containerActivity .activity .hour .containerLineaVertical {
+    display: block;
+  }
+  #timeline .containerActivity .activity .activityInfo {
+    text-align: left;
+  }
+  #timeline .containerActivity .activity .activityInfo .activityInfoName {
+    margin-left: 50px;
+    padding-top: 0px;
+  }
+  #timeline .containerActivity .activity .activityInfo .activityInfoDescription {
+    margin-left: 50px;
+  }
+  #timeline .containerActivity .activity .containerLineaVertical {
+    display: none;
+  }
+  .paragraphDescriptionPaddingBottom {
+    padding-bottom: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  #aboutDaleMasAfro, #previousEvent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #aboutDaleMasAfro .boxImg, #previousEvent .boxImg {
+    padding: 0 10px;
+    min-width: 50%;
+    display: block;
+  }
+  #aboutDaleMasAfro .boxImg img, #previousEvent .boxImg img {
+    width: 100%;
+    max-width: 588px;
+  }
+  #aboutDaleMasAfro .boxInfo, #previousEvent .boxInfo {
+    min-width: 50%;
+    padding: 0 10px;
+    text-align: left;
+  }
+  #aboutDaleMasAfro .boxInfo h2, #previousEvent .boxInfo h2 {
+    margin-bottom: 45px;
+  }
+  #aboutDaleMasAfro .boxInfo .containerAliadesPartPaises, #previousEvent .boxInfo .containerAliadesPartPaises {
+    justify-content: flex-start;
+  }
+  #aboutDaleMasAfro .boxInfo .containerAliadesPartPaises p, #previousEvent .boxInfo .containerAliadesPartPaises p {
+    margin: 0 45px 0 0;
+  }
+  #aboutDaleMasAfro .boxInfo .containerImgLine, #previousEvent .boxInfo .containerImgLine {
+    display: none;
+  }
+  #aboutDaleMasAfro .boxInfo .buttonSecundary, #previousEvent .boxInfo .buttonSecundary {
+    margin: 0;
+  }
+}
+@media (min-width: 461px) {
+  #transmission {
+    bottom: -350px;
+  }
+}
+@media (min-width: 576px) {
+  #transmission {
+    bottom: -400px;
+  }
+}
+@media (min-width: 1200px) {
+  #transmission iframe {
+    max-width: 854px;
+    max-height: 480px;
+  }
+}
+@media (min-width: 992px) {
+  #inscriptionTransmission {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../../images/background-inscription.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #inscriptionTransmission .expAfro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    width: 35%;
+    border-radius: 16px 0px 0px 16px;
+    position: relative;
+    background-color: transparent;
+  }
+  #inscriptionTransmission .expAfro::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("../../images/img-inscripcion.png");
+  }
+  #inscriptionTransmission .expAfro::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #217370;
+    opacity: 0.8;
+  }
+  #inscriptionTransmission .expAfro img {
+    display: inline-block;
+    z-index: 99;
+  }
+  #inscriptionTransmission .expAfro .expAfroTittle {
+    font-size: 28px;
+    text-transform: initial;
+    z-index: 99;
+  }
+  #inscriptionTransmission .expAfro .expAfroContent {
+    margin-top: 10px;
+    line-height: 32px;
+    z-index: 99;
+  }
+  #inscriptionTransmission #formInscription {
+    width: 65%;
+    border-radius: 0px 16px 16px 0px;
+    text-align: left;
+    padding: 100px 150px 100px 100px;
+  }
+  #inscriptionTransmission #formInscription .containerImgLine {
+    display: none;
+  }
+  #inscriptionTransmission #formInscription .containerBotonRegister {
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+  #inscriptionTransmission #formInscription .containerBotonRegister input {
+    max-width: 200px;
+  }
+  #inscriptionTransmission #transmission {
+    left: 10%;
+    width: 80%;
+  }
+  #inscriptionTransmission #transmission p {
+    padding-bottom: 50px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 460px;
   }
 }
 

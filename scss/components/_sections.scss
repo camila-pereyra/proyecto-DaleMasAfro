@@ -1,13 +1,3 @@
-//GRAL
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 46px;
-}
-@media (min-width:1200px) {
-    html{
-        scroll-padding-top: 93px;
-    }
-}
 section{
     width: 100%;
     padding: 40px 20px 0 20px;
@@ -51,7 +41,7 @@ section{
         padding: 5px 0 0 0;
         .cardContainer{
             position: relative;
-            width: 100%;
+            max-width: 387px;
             height: 297px;
             background-position: 50% 50%;
             background-repeat: no-repeat;
@@ -104,13 +94,11 @@ section{
     }
 }
 #alliances{
-    padding: 23px 20px 0 20px;
     .containerLogo{
         padding: 10px 0 40px 0;
-        img{
-            width: 100%;
-        }
-        h4{
+        width: 125px;
+        margin: auto;
+       h4{
             margin: 0;
             padding-bottom: 15px;
             font-size: 20px;
@@ -118,11 +106,20 @@ section{
             color:#666666;
         }
         img{
-            width: 125px;
+            width:100%;
+        }        
+    }
+    #containerLogosAcompañan{
+        padding: 10px 0 40px 0;
+        h4{
+            margin: 0;
+            padding-bottom: 15px;
+            font-size: 20px;
+            font-weight: 600;
+            color:#666666;
         }
-        .logos{
+        #logos{
             display: flex;
-            flex-direction: row;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
@@ -154,6 +151,9 @@ section{
         font-size: 24px;
         font-weight: 600;
     }
+    #mapCCK{
+        display: none;
+    }
     .containerActivity{
         .activity{
             display: flex;
@@ -161,15 +161,20 @@ section{
             justify-content: center;
             align-items: center;
             padding: 14px 0;
-            .activityHour{
-                background-color: $colorRed;
-                color: white;
-                max-width: 122px;
-                margin: auto;
-                border-radius: 16px;
-                padding: 10px;
-                font-size: 20px;
-                font-weight: 600;
+            .hour{
+                .activityHour{
+                    background-color: $colorRed;
+                    color: white;
+                    max-width: 122px;
+                    margin: auto;
+                    border-radius: 16px;
+                    padding: 10px;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .containerLineaVertical{
+                    display: none;
+                }
             }
             .activityInfo{
                 .activityInfoName{
@@ -185,19 +190,21 @@ section{
                     font-weight: 400;
                 }
             }
-        }
-        .containerLineaVertical{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            .lineaVertical{
-                width: 5px;
-                height: 56px;
-                background-color: $colorRed;
-                border-radius: 10px;
+            .containerLineaVertical{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding-top: 28px;
+                .lineaVertical{
+                    width: 5px;
+                    height: 56px;
+                    background-color: $colorRed;
+                    border-radius: 10px;
+                }
             }
         }
+        
     }
     .ubicacion{
         text-decoration: none;
@@ -230,6 +237,11 @@ section{
         svg{
             color: $colorRed;
         }
+    }
+}
+#aboutDaleMasAfro, #previousEvent{
+    .boxImg{
+        display: none;
     }
 }
 .paragraphDescriptionPaddingBottom{

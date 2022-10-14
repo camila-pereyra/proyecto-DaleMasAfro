@@ -1,0 +1,445 @@
+//SCROLL
+@media (min-width:1200px) {
+    html{
+        scroll-padding-top: 93px;
+    }
+}
+//HEADER
+@media (min-width:1200px) {
+    header{
+        #logoMobile{
+            display: none;
+        }
+        #logoDesktop{
+            display: inline;
+        }
+        nav{
+            position: relative;
+            display: block;
+            #navInscription{
+                display: none;
+            }
+            ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                li{
+                font-size: 15px;
+                margin: 0;
+                text-align: center;
+                    a{
+                        width: 100%;
+                        padding: 10px;
+                        margin: 0;
+                        &:hover{
+                            background-color: $colorOrange;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .hamburger{
+            display: none;
+        }
+        .containerButtonRegister{
+            display: block ;
+            min-width: 200px;
+            height: 64px;
+            position: relative;
+            border-radius: 40px;
+            overflow: hidden;
+            .buttonRegister{
+                display: block ;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorRed;
+                text-decoration: none;
+                color: white;
+                font-weight: 800;
+                font-size: 24px;
+                font-family: $fontBlinker;
+                transition: all 500ms ease;
+                &:hover{
+                    background-color: $colorRedHover;
+                    transition: all 500ms ease;
+                }
+            }
+            .buttonRegisterHand{
+                display: block ;
+                width: 75px;
+                position: absolute;
+                right: -18px;
+                top: 5px;
+            }
+        }
+    }    
+}
+ @media (min-width:1450px){
+    header{
+      nav{
+        ul{
+          li{
+            font-size: 18px;
+            margin: 0 10px 0 10px;
+          }
+        }
+      }
+    }
+ }
+//SECTION HOME
+@media (min-width:1200px) {
+    #home{
+        .homeLogo{
+            margin: 70px 0 110px 0;
+            .homeLogoTittle{
+                position: absolute;
+                top:75px;
+                left: -65px;
+                font-size: 80px;
+            }
+            .homeContainerImgYDaleMasAfro{
+                .homeContainerImg{
+                    max-width: 59px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .homeContainerDaleMasAfro{
+                    max-width: 75px;
+                    h1{
+                        font-size: 32px !important;
+                    }
+                    &::before{
+                    max-width: 69px;
+                    max-height: 1px;
+                    }
+                }
+            }
+        }
+        .homeInfo{
+            max-width: 380px;
+            padding: 16px;
+            background: rgba(103, 103, 103, 0.44);
+            backdrop-filter: blur(2.47826px);
+            border-radius: 13.2174px;
+            .boxInfo{
+                p{
+                    font-size: 30px;
+                }
+            }
+        }
+        .containerButtonRegister{
+            width: 320px;
+            height: 88px;
+            border-radius: 66px;
+            margin-top: 12px;
+            .buttonRegister{
+                font-weight: 900;
+                font-size: 40px;
+            }
+            .buttonRegisterHand{
+                width: 98px;
+                position: absolute;
+                right: -23px;
+                top: 10px;
+            }
+        }
+    }
+}
+//SECTIONS
+@media (min-width:576px){
+    section{
+        h2{
+            font-size: 35px;
+        }
+        p{
+            line-height: 30px;
+        }
+    }
+    .containerImgLine{
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:992px) {
+    section{
+        padding: 76px 120px 0 120px;
+    }
+    #timeline{
+        padding: 76px 120px;
+    }
+    #banner{
+        padding: 76px 120px;
+    }
+    #inscriptionTransmission{
+        padding: 76px 120px 300px 120px;
+    }
+    
+}
+
+@media (min-width:768px) {
+    section{
+        h2{
+            font-size: 48px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+    .containerImgLine{
+        margin-bottom: 20px;
+    }
+    #participation{
+        .containerCards{
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            .cardContainer{
+                margin: 20px 25px;
+            }   
+        }
+    }
+    #alliances{
+        .boxImpulsadoApoya{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .containerLogo{
+            padding: 0 0 76px 0;
+            min-width: 250px;
+           h4{
+                padding-bottom: 32px;
+                font-size: 32px;
+            }                  
+        }
+        #containerLogosAcompañan{
+            padding: 0 0 76px 0;
+            h4{
+                padding-bottom: 32px;
+                font-size: 32px;
+            }
+            #logos{
+                img{
+                    border-radius: 100%;
+                    width: 104px;
+                    margin: 50px;
+                }
+            }
+        }
+    }
+    #timeline{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .ubicacion{
+            display: none;
+        }
+        .containerImgLine{
+            display: none;
+        }
+        .boxTimeLine{
+            width: 50%;
+            text-align: left;
+            .dayTimeline{
+                font-size: 22px;
+                padding: 22px 0;
+            }
+            .containerNameLocal{
+                margin: 0;
+                background-color: transparent;
+                color: $colorRed;
+                padding: 0 0 40px 0;
+                border-radius:0px;
+                font-size: 22px;
+                font-weight: 700;
+            }
+            #mapCCK{
+                display: block;
+                width: 100%;
+            }
+        }
+        .containerActivity{
+            width: 50%;            
+            .activity{
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 14px 0;
+                .hour{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .activityHour{
+                        margin: 0;
+                    }
+                    .containerLineaVertical{
+                        display: block;
+                    }
+                }
+                .activityInfo{
+                    text-align: left;
+                    .activityInfoName{
+                        margin-left: 50px;
+                        padding-top: 0px;
+                    }  
+                    .activityInfoDescription{
+                        margin-left: 50px;
+                    }
+                }
+                .containerLineaVertical{
+                    display: none;
+                }
+            }
+        }
+    }
+    .paragraphDescriptionPaddingBottom{
+        padding-bottom: 35px;
+    }
+}
+@media (min-width:1200px) {
+    #aboutDaleMasAfro, #previousEvent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .boxImg{
+            padding: 0 10px;
+            min-width: 50%;
+            display: block;
+            img{
+                width: 100%;
+                max-width: 588px;
+            }
+        }
+        .boxInfo{
+            min-width: 50%;
+            padding: 0 10px;
+            text-align: left;
+            h2{
+                margin-bottom: 45px;
+            }
+            .containerAliadesPartPaises{
+                justify-content: flex-start;
+                p{
+                    margin: 0 45px 0 0;
+                }
+            }
+            .containerImgLine{
+                display: none;
+            }
+            .buttonSecundary{
+                margin: 0;
+            }
+        }
+    }
+    
+    
+    
+}
+@media (min-width:461px) {
+    #transmission{
+           bottom: -350px;
+    }
+}
+@media (min-width:576px) {
+    #transmission{
+           bottom: -400px;
+    }
+}
+@media(min-width:1200px){
+    #transmission{
+        iframe{
+            max-width: 854px;
+            max-height: 480px;
+        }
+    }
+} 
+@media (min-width:992px) {
+    #inscriptionTransmission{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-image: url("../../images/background-inscription.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        .expAfro{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+            width: 35%;
+            border-radius: 16px 0px 0px 16px;
+            position: relative;
+            background-color: transparent;
+            &::before{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background-image: url("../../images/img-inscripcion.png");
+            }
+            &::after{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background-color: $colorLigthBlueHover;
+                opacity: 0.8;
+            }
+            img{
+                display: inline-block ;
+                z-index: 99;
+            }
+            .expAfroTittle{
+                font-size: 28px;
+                text-transform: initial;
+                z-index: 99;
+            }
+            .expAfroContent{
+                margin-top: 10px;
+                line-height: 32px;
+                z-index: 99;
+            }
+        }
+        #formInscription{
+            width: 65%;
+            border-radius:0px  16px  16px  0px;
+            text-align: left;
+            padding: 100px 150px 100px 100px;
+            .containerImgLine{
+                display: none;
+            }
+            .containerBotonRegister{
+                width: 100%;
+                justify-content: flex-start !important;
+                input{
+                    max-width: 200px;
+                }
+            }
+        }
+        #transmission{
+            left: 10%;
+            width: 80%;
+            p{
+                padding-bottom: 50px;
+            }
+            
+            
+        }
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 460px;
+    }
+}
+
+
