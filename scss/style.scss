@@ -1,10 +1,13 @@
 @import "./base/variables";
+@import "./components/scroll";
 @import "./base/reset";
 @import "./components/header";
 @import "./components/burgerButton";
 @import "./components/home";
 @import "./components/sections";
-@import "./components/sectionInscription";
+@import "./components/inscription";
 @import "./components/modalForm";
+@import "./components/transmission";
 @import "./components/footer";
 @import "./components/buttonFloatRgister";
+@import "./components/mediaqueries";
