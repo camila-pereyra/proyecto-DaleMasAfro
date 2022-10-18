@@ -259,6 +259,10 @@ section p {
   line-height: 28.8px;
 }
 
+.negrita {
+  font-weight: 700;
+}
+
 .containerImgLine img {
   max-width: 100%;
 }
@@ -307,7 +311,6 @@ section p {
   width: 100%;
   margin: 0;
   padding: 0;
-  text-decoration: underline;
   font-family: "Blinker", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -339,7 +342,7 @@ section p {
 }
 #alliances .containerLogo h4 {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   font-size: 20px;
   font-weight: 600;
   color: #666666;
@@ -352,21 +355,10 @@ section p {
 }
 #alliances #containerLogosAcompañan h4 {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
   font-size: 20px;
   font-weight: 600;
   color: #666666;
-}
-#alliances #containerLogosAcompañan #logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-#alliances #containerLogosAcompañan #logos img {
-  border-radius: 100%;
-  width: 60px;
-  margin: 25px;
 }
 
 #timeline {
@@ -800,12 +792,95 @@ footer .redes .redesIcons a:visited {
     display: none;
   }
 }
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+  position: relative;
+  width: 100%;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: gray;
+  opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+  opacity: 100%;
+}
+
+.carousel__anterior {
+  left: -15px;
+}
+
+.carousel__siguiente {
+  right: -15px;
+}
+
+.carousel__lista {
+  overflow: hidden;
+}
+
+.carousel__elemento {
+  text-align: center;
+  margin: 0 2px;
+}
+.carousel__elemento p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+.carousel__elemento img {
+  width: 75px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  .carousel__elemento img {
+    width: 100px;
+  }
+}
+
+.carousel__indicadores {
+  margin-top: 10px;
+}
+
+.carousel__indicadores .glider-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: gray;
+  opacity: 0.2;
+  margin-top: 30px;
+  border-radius: 100%;
+}
+
+.carousel__indicadores .glider-dot:hover {
+  opacity: 0.5;
+}
+
+.carousel__indicadores .glider-dot.active {
+  opacity: 1;
+}
+
 @media (min-width: 1200px) {
   html {
     scroll-padding-top: 93px;
   }
 }
 @media (min-width: 1200px) {
+  header {
+    padding: 10px 20px;
+  }
   header #logoMobile {
     display: none;
   }
@@ -877,8 +952,11 @@ footer .redes .redesIcons a:visited {
   }
 }
 @media (min-width: 1450px) {
+  header {
+    padding: 10px 50px;
+  }
   header nav ul li {
-    font-size: 18px;
+    font-size: 17px;
     margin: 0 10px 0 10px;
   }
 }
@@ -986,7 +1064,7 @@ footer .redes .redesIcons a:visited {
     align-items: center;
   }
   #alliances .containerLogo {
-    padding: 0 0 76px 0;
+    padding: 0 0 72px 0;
     min-width: 250px;
   }
   #alliances .containerLogo h4 {
@@ -994,16 +1072,10 @@ footer .redes .redesIcons a:visited {
     font-size: 32px;
   }
   #alliances #containerLogosAcompañan {
-    padding: 0 0 76px 0;
+    padding: 0 0 72px 0;
   }
   #alliances #containerLogosAcompañan h4 {
-    padding-bottom: 32px;
     font-size: 32px;
-  }
-  #alliances #containerLogosAcompañan #logos img {
-    border-radius: 100%;
-    width: 104px;
-    margin: 50px;
   }
   #timeline {
     display: flex;

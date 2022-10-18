@@ -18,6 +18,9 @@ section{
         line-height: 28.8px;
     }
 }
+.negrita{
+    font-weight: 700;
+}
 .containerImgLine{
     img{
         max-width: 100%;
@@ -65,7 +68,6 @@ section{
                     width: 100%;
                     margin: 0;
                     padding: 0;
-                    text-decoration: underline;
                     font-family: $fontBlinker;
                     font-weight: 700;
                     font-size: 24px;
@@ -100,7 +102,7 @@ section{
         margin: auto;
        h4{
             margin: 0;
-            padding-bottom: 15px;
+            padding-bottom: 20px;
             font-size: 20px;
             font-weight: 600;
             color:#666666;
@@ -113,21 +115,10 @@ section{
         padding: 10px 0 40px 0;
         h4{
             margin: 0;
-            padding-bottom: 15px;
+            padding-bottom: 40px;
             font-size: 20px;
             font-weight: 600;
             color:#666666;
-        }
-        #logos{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            img{
-                border-radius: 100%;
-                width: 60px;
-                margin: 25px;
-            }
         }
     }
 }
