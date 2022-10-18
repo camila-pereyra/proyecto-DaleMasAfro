@@ -7,6 +7,7 @@
 //HEADER
 @media (min-width:1200px) {
     header{
+        padding: 10px 20px;
         #logoMobile{
             display: none;
         }
@@ -80,10 +81,11 @@
 }
  @media (min-width:1450px){
     header{
+        padding: 10px 50px;
       nav{
         ul{
           li{
-            font-size: 18px;
+            font-size: 17px;
             margin: 0 10px 0 10px;
           }
         }
@@ -212,7 +214,7 @@
             align-items: center;
         }
         .containerLogo{
-            padding: 0 0 76px 0;
+            padding: 0 0 72px 0;
             min-width: 250px;
            h4{
                 padding-bottom: 32px;
@@ -220,18 +222,11 @@
             }                  
         }
         #containerLogosAcompañan{
-            padding: 0 0 76px 0;
+            padding: 0 0 72px 0;
             h4{
-                padding-bottom: 32px;
                 font-size: 32px;
             }
-            #logos{
-                img{
-                    border-radius: 100%;
-                    width: 104px;
-                    margin: 50px;
-                }
-            }
+            
         }
     }
     #timeline{
