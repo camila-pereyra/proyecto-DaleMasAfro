@@ -27,11 +27,21 @@
 }
 
 .carousel__anterior {
-	left: -15px;
+	left: -25px;
+	top: 30px;
+
+	@media (min-width:768px){
+		top: 55px;
+	} 
 }
 
 .carousel__siguiente {
-	right: -15px;
+	right: -25px;
+	top: 30px;
+
+	@media (min-width:768px){
+		top: 55px;
+	} 
 }
 
 .carousel__lista {
@@ -46,10 +56,9 @@
         margin-top: 5px;
     }
     img{
-        width:75px;
-        border-radius: 100%;
+        width:100px;
         @media (min-width:768px){
-            width: 100px;
+            width: 150px;
         } 
             
     }

@@ -1,8 +1,9 @@
 #home{
     width: 100%;
     height: 100vh;
+    min-height: 750px;
     padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url("../../images/BG-festival.png");
+    background-image:  url("../../images/bg_home.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;

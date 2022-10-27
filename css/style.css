@@ -3,11 +3,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 66px;
 }
-@media (min-width: 1200px) {
-  html {
-    scroll-padding-top: 93px;
-  }
-}
 
 * {
   padding: 0;
@@ -121,8 +116,9 @@ nav ul li a:hover {
 #home {
   width: 100%;
   height: 100vh;
+  min-height: 750px;
   padding: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url("../../images/BG-festival.png");
+  background-image: url("../../images/bg_home.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -268,30 +264,41 @@ section p {
 }
 
 #participation #cardOne {
-  background-image: url("../../images/Img-Participantes-1.png");
+  background-image: url("../../images/ali_delgado.jpg");
+  background-position: 50% 0%;
 }
 #participation #cardTwo {
-  background-image: url("../../images/Img-Participantes-2.png");
+  background-image: url("../../images/moustapha_sene.jpg");
+  background-position: 50% 10%;
 }
 #participation #cardThree {
-  background-image: url("../../images/Img-Participantes-3.png");
+  background-image: url("../../images/patricia_gomes.jpg");
+  background-position: 50% 40%;
+}
+#participation #cardFour {
+  background-image: url("../../images/mailen_lamadrid.jpg");
+  background-position: 50% 30%;
+}
+#participation #cardFive {
+  background-image: url("../../images/ntaka.png");
+  background-position: 40% 0%;
+}
+#participation #cardSix {
+  background-image: url("../../images/j_anderson.jpg");
+  background-position: 50% 15%;
 }
 #participation .containerCards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 5px 0 0 0;
 }
 #participation .containerCards .cardContainer {
   position: relative;
-  max-width: 387px;
+  max-width: 450px;
   height: 297px;
-  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 17px;
   overflow: hidden;
+  margin: auto;
+  margin-bottom: 20px;
 }
 #participation .containerCards .cardContainer .cardContainer__content {
   width: 100%;
@@ -300,35 +307,26 @@ section p {
   flex-direction: column;
   align-items: flex-start;
   padding: 12px 10px;
-  gap: 12px;
+  gap: 10px;
   background: rgba(0, 0, 0, 0.5);
-  transform: translateY(74%);
+  transform: translateY(82%);
   transition: transform 500ms ease;
   text-align: justify;
   color: white;
 }
 #participation .containerCards .cardContainer .cardContainer__content .cardContainer__name {
-  width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Blinker", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-#participation .containerCards .cardContainer .cardContainer__content .cardContainer__tittle {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Blinker", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-size: 21px;
   text-transform: uppercase;
 }
 #participation .containerCards .cardContainer .cardContainer__content .cardContainer__body {
-  width: 100%;
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 #participation .containerCards .cardContainer:hover .cardContainer__content {
   transform: translateY(0%);
@@ -336,9 +334,7 @@ section p {
 }
 
 #alliances .containerLogo {
-  padding: 10px 0 40px 0;
-  width: 125px;
-  margin: auto;
+  margin: 10px 0 40px 0;
 }
 #alliances .containerLogo h4 {
   margin: 0;
@@ -348,7 +344,12 @@ section p {
   color: #666666;
 }
 #alliances .containerLogo img {
-  width: 100%;
+  display: block;
+  width: 125px;
+  margin: auto;
+}
+#alliances .containerLogo .imgNosApoya {
+  margin-bottom: 20px;
 }
 #alliances #containerLogosAcompañan {
   padding: 10px 0 40px 0;
@@ -382,7 +383,7 @@ section p {
   font-size: 24px;
   font-weight: 600;
 }
-#timeline #mapCCK {
+#timeline #map {
   display: none;
 }
 #timeline .containerActivity .activity {
@@ -416,6 +417,10 @@ section p {
   font-size: 20px;
   color: #464646;
   font-weight: 400;
+}
+#timeline .containerActivity .activity .activityInfo .activityInfoDescription ul {
+  padding-left: 0;
+  list-style: none;
 }
 #timeline .containerActivity .activity .containerLineaVertical {
   display: flex;
@@ -468,7 +473,7 @@ section p {
 }
 
 .paragraphDescriptionPaddingBottom {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .buttonSecundary {
@@ -533,7 +538,7 @@ section p {
 
 #inscriptionTransmission {
   position: relative;
-  padding: 40px 20px 167px 20px;
+  padding: 40px 20px 200px 20px;
   background-color: #2c2c2c;
 }
 #inscriptionTransmission .expAfro {
@@ -682,13 +687,16 @@ section p {
 
 #transmission {
   position: absolute;
+  bottom: -420px;
+  left: 0px;
+  width: 100%;
+}
+#transmission #boxTransmission {
+  margin: 0 20px 0 20px;
+  padding: 40px 20px;
   background-color: #3C3C3C;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
-  padding: 20px;
-  bottom: -400px;
-  left: 2%;
-  width: 96%;
 }
 #transmission h2 {
   color: white;
@@ -717,7 +725,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 380px;
+  margin-top: 450px;
 }
 footer .contacto {
   font-size: 24px;
@@ -737,7 +745,7 @@ footer .redes .redesIcons {
   padding-top: 10px;
 }
 footer .redes .redesIcons a {
-  margin: 0 15px;
+  margin: 0 3px;
   text-decoration: none;
   transition: all 500ms ease;
 }
@@ -821,11 +829,23 @@ footer .redes .redesIcons a:visited {
 }
 
 .carousel__anterior {
-  left: -15px;
+  left: -25px;
+  top: 30px;
+}
+@media (min-width: 768px) {
+  .carousel__anterior {
+    top: 55px;
+  }
 }
 
 .carousel__siguiente {
-  right: -15px;
+  right: -25px;
+  top: 30px;
+}
+@media (min-width: 768px) {
+  .carousel__siguiente {
+    top: 55px;
+  }
 }
 
 .carousel__lista {
@@ -841,12 +861,11 @@ footer .redes .redesIcons a:visited {
   margin-top: 5px;
 }
 .carousel__elemento img {
-  width: 75px;
-  border-radius: 100%;
+  width: 100px;
 }
 @media (min-width: 768px) {
   .carousel__elemento img {
-    width: 100px;
+    width: 150px;
   }
 }
 
@@ -872,12 +891,253 @@ footer .redes .redesIcons a:visited {
   opacity: 1;
 }
 
+@media (min-width: 576px) {
+  section h2 {
+    font-size: 35px;
+  }
+  section p {
+    line-height: 30px;
+  }
+  .containerImgLine {
+    margin-bottom: 10px;
+  }
+  #formInscription {
+    padding: 100px 150px 100px 100px;
+  }
+  footer .redes .redesIcons a {
+    margin: 15px;
+  }
+}
+@media (min-width: 768px) {
+  section h2 {
+    font-size: 48px;
+  }
+  section p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .containerImgLine {
+    margin-bottom: 20px;
+  }
+  #participation .containerCards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #participation .containerCards .cardContainer {
+    margin: 0 10px 30px 10px;
+  }
+  #participation .containerCards .cardContainer .cardContainer__content {
+    gap: 13px;
+  }
+  #participation .containerCards .cardContainer .cardContainer__content .cardContainer__body {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+  #alliances #boxNosApoya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #alliances .containerLogo {
+    margin: 0 0 72px 0;
+  }
+  #alliances .containerLogo h4 {
+    padding-bottom: 32px;
+    font-size: 32px;
+  }
+  #alliances .containerLogo img {
+    min-width: 200px;
+    margin: 0 50px 0 50px;
+  }
+  #alliances .containerLogo .imgNosApoya {
+    margin: 0 50px 0 50px;
+  }
+  #alliances .containerLogo #imgNosApoya {
+    margin: auto;
+  }
+  #alliances #containerLogosAcompañan {
+    margin: 0 0 72px 0;
+  }
+  #alliances #containerLogosAcompañan h4 {
+    font-size: 32px;
+  }
+  #timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #timeline .ubicacion {
+    display: none;
+  }
+  #timeline .containerImgLine {
+    display: none;
+  }
+  #timeline .boxTimeLine {
+    width: 40%;
+    text-align: left;
+  }
+  #timeline .boxTimeLine .dayTimeline {
+    font-size: 22px;
+    padding: 22px 0;
+  }
+  #timeline .boxTimeLine .containerNameLocal {
+    margin: 0;
+    background-color: transparent;
+    color: #D8031F;
+    padding: 0 0 40px 0;
+    border-radius: 0px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  #timeline .boxTimeLine #map {
+    display: block;
+    width: 100%;
+    min-height: 900px;
+  }
+  #timeline .containerActivity {
+    width: 45%;
+  }
+  #timeline .containerActivity .activity {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 14px 0;
+  }
+  #timeline .containerActivity .activity .hour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+  }
+  #timeline .containerActivity .activity .hour .activityHour {
+    margin: 0;
+  }
+  #timeline .containerActivity .activity .hour .containerLineaVertical {
+    display: block;
+  }
+  #timeline .containerActivity .activity .activityInfo {
+    text-align: left;
+  }
+  #timeline .containerActivity .activity .activityInfo .activityInfoName {
+    margin-left: 50px;
+    padding-top: 0px;
+  }
+  #timeline .containerActivity .activity .activityInfo .activityInfoDescription {
+    margin-left: 50px;
+  }
+  #timeline .containerActivity .activity .activityInfo .activityInfoDescription ul {
+    padding-left: 2rem;
+    list-style: disc;
+  }
+  #timeline .containerActivity .activity .containerLineaVertical {
+    display: none;
+  }
+  #transmission {
+    bottom: -450px;
+  }
+}
+@media (min-width: 992px) {
+  section {
+    padding: 76px 120px 0 120px;
+  }
+  #timeline {
+    padding: 76px 120px;
+  }
+  #banner {
+    padding: 76px 120px;
+  }
+  #inscriptionTransmission {
+    padding: 76px 120px 300px 120px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../../images/background-inscription.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #inscriptionTransmission .expAfro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    width: 35%;
+    border-radius: 16px 0px 0px 16px;
+    position: relative;
+    background-color: transparent;
+  }
+  #inscriptionTransmission .expAfro::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("../../images/img-inscripcion.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  #inscriptionTransmission .expAfro::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #217370;
+    opacity: 0.8;
+  }
+  #inscriptionTransmission .expAfro img {
+    display: inline-block;
+    z-index: 99;
+  }
+  #inscriptionTransmission .expAfro .expAfroTittle {
+    font-size: 28px;
+    text-transform: initial;
+    z-index: 99;
+  }
+  #inscriptionTransmission .expAfro .expAfroContent {
+    margin-top: 10px;
+    line-height: 32px;
+    z-index: 99;
+  }
+  #inscriptionTransmission #formInscription {
+    width: 65%;
+    border-radius: 0px 16px 16px 0px;
+    text-align: left;
+    padding: 100px 150px 100px 100px;
+  }
+  #inscriptionTransmission #formInscription .containerImgLine {
+    display: none;
+  }
+  #inscriptionTransmission #formInscription .containerBotonRegister {
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+  #inscriptionTransmission #formInscription .containerBotonRegister input {
+    max-width: 200px;
+  }
+  #inscriptionTransmission #transmission {
+    bottom: -500px;
+  }
+  #inscriptionTransmission #transmission #boxTransmission {
+    padding: 76px 0;
+    margin: 0 120px 0 120px;
+  }
+  #inscriptionTransmission #transmission #boxTransmission p {
+    padding-bottom: 50px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 550px;
+  }
+}
 @media (min-width: 1200px) {
   html {
     scroll-padding-top: 93px;
   }
-}
-@media (min-width: 1200px) {
   header {
     padding: 10px 20px;
   }
@@ -950,25 +1210,14 @@ footer .redes .redesIcons a:visited {
     right: -18px;
     top: 5px;
   }
-}
-@media (min-width: 1450px) {
-  header {
-    padding: 10px 50px;
-  }
-  header nav ul li {
-    font-size: 17px;
-    margin: 0 10px 0 10px;
-  }
-}
-@media (min-width: 1200px) {
   #home .homeLogo {
     margin: 70px 0 110px 0;
   }
   #home .homeLogo .homeLogoTittle {
     position: absolute;
     top: 75px;
-    left: -65px;
-    font-size: 80px;
+    left: -95px;
+    font-size: 100px;
   }
   #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerImg {
     max-width: 59px;
@@ -1012,159 +1261,23 @@ footer .redes .redesIcons a:visited {
     right: -23px;
     top: 10px;
   }
-}
-@media (min-width: 576px) {
-  section h2 {
-    font-size: 35px;
-  }
-  section p {
-    line-height: 30px;
-  }
-  .containerImgLine {
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 992px) {
-  section {
-    padding: 76px 120px 0 120px;
-  }
-  #timeline {
-    padding: 76px 120px;
-  }
-  #banner {
-    padding: 76px 120px;
-  }
-  #inscriptionTransmission {
-    padding: 76px 120px 300px 120px;
-  }
-}
-@media (min-width: 768px) {
-  section h2 {
-    font-size: 48px;
-  }
-  section p {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  .containerImgLine {
-    margin-bottom: 20px;
-  }
-  #participation .containerCards {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  #participation .containerCards .cardContainer {
-    margin: 20px 25px;
-  }
-  #alliances .boxImpulsadoApoya {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #alliances .containerLogo {
-    padding: 0 0 72px 0;
-    min-width: 250px;
-  }
-  #alliances .containerLogo h4 {
-    padding-bottom: 32px;
-    font-size: 32px;
-  }
-  #alliances #containerLogosAcompañan {
-    padding: 0 0 72px 0;
-  }
-  #alliances #containerLogosAcompañan h4 {
-    font-size: 32px;
-  }
-  #timeline {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  #timeline .ubicacion {
-    display: none;
-  }
-  #timeline .containerImgLine {
-    display: none;
-  }
-  #timeline .boxTimeLine {
-    width: 50%;
-    text-align: left;
-  }
-  #timeline .boxTimeLine .dayTimeline {
-    font-size: 22px;
-    padding: 22px 0;
-  }
-  #timeline .boxTimeLine .containerNameLocal {
-    margin: 0;
-    background-color: transparent;
-    color: #D8031F;
-    padding: 0 0 40px 0;
-    border-radius: 0px;
-    font-size: 22px;
-    font-weight: 700;
-  }
-  #timeline .boxTimeLine #mapCCK {
-    display: block;
-    width: 100%;
-  }
-  #timeline .containerActivity {
-    width: 50%;
-  }
-  #timeline .containerActivity .activity {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 14px 0;
-  }
-  #timeline .containerActivity .activity .hour {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #timeline .containerActivity .activity .hour .activityHour {
-    margin: 0;
-  }
-  #timeline .containerActivity .activity .hour .containerLineaVertical {
-    display: block;
-  }
-  #timeline .containerActivity .activity .activityInfo {
-    text-align: left;
-  }
-  #timeline .containerActivity .activity .activityInfo .activityInfoName {
-    margin-left: 50px;
-    padding-top: 0px;
-  }
-  #timeline .containerActivity .activity .activityInfo .activityInfoDescription {
-    margin-left: 50px;
-  }
-  #timeline .containerActivity .activity .containerLineaVertical {
-    display: none;
-  }
-  .paragraphDescriptionPaddingBottom {
-    padding-bottom: 35px;
-  }
-}
-@media (min-width: 1200px) {
   #aboutDaleMasAfro, #previousEvent {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   #aboutDaleMasAfro .boxImg, #previousEvent .boxImg {
-    padding: 0 10px;
-    min-width: 50%;
-    display: block;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #aboutDaleMasAfro .boxImg img, #previousEvent .boxImg img {
     width: 100%;
-    max-width: 588px;
   }
   #aboutDaleMasAfro .boxInfo, #previousEvent .boxInfo {
-    min-width: 50%;
-    padding: 0 10px;
-    text-align: left;
+    width: 48%;
+    text-align: justify;
   }
   #aboutDaleMasAfro .boxInfo h2, #previousEvent .boxInfo h2 {
     margin-bottom: 45px;
@@ -1181,100 +1294,18 @@ footer .redes .redesIcons a:visited {
   #aboutDaleMasAfro .boxInfo .buttonSecundary, #previousEvent .boxInfo .buttonSecundary {
     margin: 0;
   }
-}
-@media (min-width: 461px) {
-  #transmission {
-    bottom: -350px;
-  }
-}
-@media (min-width: 576px) {
-  #transmission {
-    bottom: -400px;
-  }
-}
-@media (min-width: 1200px) {
   #transmission iframe {
     max-width: 854px;
     max-height: 480px;
   }
 }
-@media (min-width: 992px) {
-  #inscriptionTransmission {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-image: url("../../images/background-inscription.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+@media (min-width: 1450px) {
+  header {
+    padding: 10px 50px;
   }
-  #inscriptionTransmission .expAfro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
-    width: 35%;
-    border-radius: 16px 0px 0px 16px;
-    position: relative;
-    background-color: transparent;
-  }
-  #inscriptionTransmission .expAfro::before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-image: url("../../images/img-inscripcion.png");
-  }
-  #inscriptionTransmission .expAfro::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-color: #217370;
-    opacity: 0.8;
-  }
-  #inscriptionTransmission .expAfro img {
-    display: inline-block;
-    z-index: 99;
-  }
-  #inscriptionTransmission .expAfro .expAfroTittle {
-    font-size: 28px;
-    text-transform: initial;
-    z-index: 99;
-  }
-  #inscriptionTransmission .expAfro .expAfroContent {
-    margin-top: 10px;
-    line-height: 32px;
-    z-index: 99;
-  }
-  #inscriptionTransmission #formInscription {
-    width: 65%;
-    border-radius: 0px 16px 16px 0px;
-    text-align: left;
-    padding: 100px 150px 100px 100px;
-  }
-  #inscriptionTransmission #formInscription .containerImgLine {
-    display: none;
-  }
-  #inscriptionTransmission #formInscription .containerBotonRegister {
-    width: 100%;
-    justify-content: flex-start !important;
-  }
-  #inscriptionTransmission #formInscription .containerBotonRegister input {
-    max-width: 200px;
-  }
-  #inscriptionTransmission #transmission {
-    left: 10%;
-    width: 80%;
-  }
-  #inscriptionTransmission #transmission p {
-    padding-bottom: 50px;
-  }
-  footer {
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 460px;
+  header nav ul li {
+    font-size: 17px;
+    margin: 0 10px 0 10px;
   }
 }
 
