@@ -97,7 +97,7 @@
             display: none;
         }
         .boxTimeLine{
-            width: 40%;
+            width: 46%;
             text-align: left;
             .dayTimeline{
                 font-size: 22px;
@@ -115,16 +115,16 @@
             #map{
                 display: block;
                 width: 100%;
-                min-height: 900px;
+                max-height: 420px;
             }
         }
         .containerActivity{
-            width: 45%;            
+            width: 46%;            
             .activity{
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: flex-start;
-                padding: 14px 0;
+                padding: 10px 0;
                 .hour{
                     display: flex;
                     flex-direction: column;
@@ -136,20 +136,17 @@
                     }
                     .containerLineaVertical{
                         display: block;
+                        padding: 15px 0 0 0;
                     }
                 }
                 .activityInfo{
                     text-align: left;
                     .activityInfoName{
-                        margin-left: 50px;
+                        margin-left: 40px;
                         padding-top: 0px;
                     }  
                     .activityInfoDescription{
-                        margin-left: 50px;
-                        ul{
-                            padding-left: 2rem;
-                            list-style: disc;
-                        }
+                        margin-left: 40px;
                     }
                 }
                 .containerLineaVertical{

@@ -325,8 +325,8 @@ section p {
 #participation .containerCards .cardContainer .cardContainer__content .cardContainer__body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 22px;
 }
 #participation .containerCards .cardContainer:hover .cardContainer__content {
   transform: translateY(0%);
@@ -975,7 +975,7 @@ footer .redes .redesIcons a:visited {
     display: none;
   }
   #timeline .boxTimeLine {
-    width: 40%;
+    width: 46%;
     text-align: left;
   }
   #timeline .boxTimeLine .dayTimeline {
@@ -994,16 +994,16 @@ footer .redes .redesIcons a:visited {
   #timeline .boxTimeLine #map {
     display: block;
     width: 100%;
-    min-height: 900px;
+    max-height: 420px;
   }
   #timeline .containerActivity {
-    width: 45%;
+    width: 46%;
   }
   #timeline .containerActivity .activity {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 14px 0;
+    padding: 10px 0;
   }
   #timeline .containerActivity .activity .hour {
     display: flex;
@@ -1017,20 +1017,17 @@ footer .redes .redesIcons a:visited {
   }
   #timeline .containerActivity .activity .hour .containerLineaVertical {
     display: block;
+    padding: 15px 0 0 0;
   }
   #timeline .containerActivity .activity .activityInfo {
     text-align: left;
   }
   #timeline .containerActivity .activity .activityInfo .activityInfoName {
-    margin-left: 50px;
+    margin-left: 40px;
     padding-top: 0px;
   }
   #timeline .containerActivity .activity .activityInfo .activityInfoDescription {
-    margin-left: 50px;
-  }
-  #timeline .containerActivity .activity .activityInfo .activityInfoDescription ul {
-    padding-left: 2rem;
-    list-style: disc;
+    margin-left: 40px;
   }
   #timeline .containerActivity .activity .containerLineaVertical {
     display: none;
