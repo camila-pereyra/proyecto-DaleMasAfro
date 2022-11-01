@@ -3,12 +3,58 @@
         h2{
             font-size: 35px;
         }
-        p{
+        p,h3{
+            font-size: 20px;
             line-height: 30px;
         }
     }
     .containerImgLine{
         margin-bottom: 10px;
+    }
+    #home{
+        .homeLogo{
+            margin: 100px 0 50px 0;
+        }
+        .homeInfo{
+            max-width: 380px;
+            padding: 16px;
+            background: rgba(103, 103, 103, 0.44);
+            backdrop-filter: blur(2.47826px);
+            border-radius: 13.2174px;
+            .boxInfo{
+                p{
+                    font-size: 30px;
+                }
+            }
+        }
+        .containerButtonRegister{
+            width: 320px;
+            height: 88px;
+            border-radius: 66px;
+            margin-top: 12px;
+            .buttonRegister{
+                font-weight: 900;
+                font-size: 40px;
+            }
+            .buttonRegisterHand{
+                width: 98px;
+                position: absolute;
+                right: -23px;
+                top: 10px;
+            }
+        }
+    }
+    #participation{
+        .containerCards{
+            .cardContainer{
+                .cardContainer__content{
+                    .cardContainer__body{
+                        font-size: 18px;
+                        line-height: 28.8px;
+                    }
+                }
+            }
+        }
     }
     #formInscription{
         padding: 100px 150px 100px 100px;
@@ -29,9 +75,9 @@
         h2{
             font-size: 48px;
         }
-        p{
-            font-size: 20px;
-            line-height: 32px;
+        p,h3{
+            font-size: 22px;
+            line-height: 34px;
         }
     }
     .containerImgLine{
@@ -47,10 +93,6 @@
                 margin: 0 10px 30px 10px;
                 .cardContainer__content{
                     gap: 13px;
-                    .cardContainer__body{
-                        font-size: 18px;
-                        line-height: 28.8px;
-                    }
                 }
             }
         }
@@ -260,7 +302,7 @@
 
 @media (min-width:1200px) {
     html{
-        scroll-padding-top: 93px;
+        scroll-padding-top: 116px;
     }
     header{
         padding: 10px 20px;
@@ -334,63 +376,7 @@
             }
         }
     }   
-    #home{
-        .homeLogo{
-            margin: 70px 0 110px 0;
-            .homeLogoTittle{
-                position: absolute;
-                top:75px;
-                left: -95px;
-                font-size: 100px;
-            }
-            .homeContainerImgYDaleMasAfro{
-                .homeContainerImg{
-                    max-width: 59px;
-                    img{
-                        width: 100%;
-                    }
-                }
-                .homeContainerDaleMasAfro{
-                    max-width: 75px;
-                    h1{
-                        font-size: 32px !important;
-                    }
-                    &::before{
-                    max-width: 69px;
-                    max-height: 1px;
-                    }
-                }
-            }
-        }
-        .homeInfo{
-            max-width: 380px;
-            padding: 16px;
-            background: rgba(103, 103, 103, 0.44);
-            backdrop-filter: blur(2.47826px);
-            border-radius: 13.2174px;
-            .boxInfo{
-                p{
-                    font-size: 30px;
-                }
-            }
-        }
-        .containerButtonRegister{
-            width: 320px;
-            height: 88px;
-            border-radius: 66px;
-            margin-top: 12px;
-            .buttonRegister{
-                font-weight: 900;
-                font-size: 40px;
-            }
-            .buttonRegisterHand{
-                width: 98px;
-                position: absolute;
-                right: -23px;
-                top: 10px;
-            }
-        }
-    }
+    
     #aboutDaleMasAfro, #previousEvent{
         display: flex;
         justify-content: space-between;
@@ -408,7 +394,7 @@
             width: 48%;
             text-align: justify;
             h2{
-                margin-bottom: 45px;
+                margin-bottom: 30px;
             }
             .containerAliadesPartPaises{
                 justify-content: flex-start;

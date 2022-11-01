@@ -26,8 +26,8 @@ window.addEventListener("load", function () {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 6,
-          slidesToScroll: 6,
+          slidesToShow: 4,
+          slidesToScroll: 4,
         },
       },
     ],

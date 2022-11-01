@@ -16,17 +16,17 @@
     .homeLogo{
         max-width: 100%;
         position: relative;
-        margin: 80px 0 30px 0;
+        margin: 80px 0 50px 0;
         .homeLogoTittle{
             position: absolute;
-            top:-60px;
+            width: max-content;
+            top:180px;
             left: 137px;
             font-family: $fontBlinker;
             font-weight: 800;
-            font-size: 45px;
+            font-size: 29px;
             text-shadow: 0px 1.5px 2.8px rgba(0, 0, 0, 0.32);
-            transform: rotate(-1.5deg);
-            color: $colorOrange;
+            color: $colorRed;
             margin: 0;
         }
         .homeContainerImgYDaleMasAfro{
@@ -80,7 +80,7 @@
             gap: 13px;
             p{
                 margin: 0;
-                font-size: 28px;
+                font-size: 25px;
                 font-family: $fontBlinker;
                 font-weight: 600;
             }

@@ -11,7 +11,7 @@ section{
         color: $colorOrange;
         text-transform: uppercase;
     }
-    p{
+    p,h3{
         margin: 0;
         font-size: 18px;
         font-weight: 400;
@@ -27,6 +27,10 @@ section{
     }
 }
 #participation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     #cardOne{
         background-image: url("../../images/ali_delgado.jpg");
         background-position: 50% 0%;
@@ -74,7 +78,7 @@ section{
                 align-items: flex-start;
                 padding: 12px 10px;
                 gap: 10px;
-                background: rgba(0, 0, 0, 0.5);
+                background: rgba(0, 0, 0, 0.7);
                 transform: translateY(82%);
                 transition: transform 500ms ease;
                 text-align: justify;
@@ -90,7 +94,7 @@ section{
                 .cardContainer__body{
                     margin: 0;
                     padding: 0;
-                    font-size: 15px;
+                    font-size: 14px;
                     line-height: 22px;
                 }
             }
@@ -249,7 +253,7 @@ section{
     }
 }
 .paragraphDescriptionPaddingBottom{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .buttonSecundary{
     display: flex;
@@ -277,13 +281,14 @@ section{
     }
     &:hover{
         background-color: $colorLigthBlueHover;
+        color:white;
         transition: all 500ms ease;
     }    
 }  
 #previousEvent{
    h4{
         color: $colorOrange;
-        font-size: 20px;
+        font-size: 22px;
         padding-bottom: 30px;
         margin: 0;
     }

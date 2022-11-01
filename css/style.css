@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 66px;
+  scroll-padding-top: 71.45px;
 }
 
 * {
@@ -22,6 +22,9 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+}
+header #logoMobile {
+  width: 40px;
 }
 header #logoDesktop {
   display: none;
@@ -132,18 +135,18 @@ nav ul li a:hover {
 #home .homeLogo {
   max-width: 100%;
   position: relative;
-  margin: 80px 0 30px 0;
+  margin: 80px 0 50px 0;
 }
 #home .homeLogo .homeLogoTittle {
   position: absolute;
-  top: -60px;
+  width: max-content;
+  top: 180px;
   left: 137px;
   font-family: "Blinker", sans-serif;
   font-weight: 800;
-  font-size: 45px;
+  font-size: 29px;
   text-shadow: 0px 1.5px 2.8px rgba(0, 0, 0, 0.32);
-  transform: rotate(-1.5deg);
-  color: #ffa123;
+  color: #D8031F;
   margin: 0;
 }
 #home .homeLogo .homeContainerImgYDaleMasAfro {
@@ -198,7 +201,7 @@ nav ul li a:hover {
 }
 #home .homeInfo .boxInfo p {
   margin: 0;
-  font-size: 28px;
+  font-size: 25px;
   font-family: "Blinker", sans-serif;
   font-weight: 600;
 }
@@ -248,7 +251,7 @@ section h2 {
   color: #ffa123;
   text-transform: uppercase;
 }
-section p {
+section p, section h3 {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
@@ -263,6 +266,12 @@ section p {
   max-width: 100%;
 }
 
+#participation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 #participation #cardOne {
   background-image: url("../../images/ali_delgado.jpg");
   background-position: 50% 0%;
@@ -308,7 +317,7 @@ section p {
   align-items: flex-start;
   padding: 12px 10px;
   gap: 10px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   transform: translateY(82%);
   transition: transform 500ms ease;
   text-align: justify;
@@ -325,7 +334,7 @@ section p {
 #participation .containerCards .cardContainer .cardContainer__content .cardContainer__body {
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 22px;
 }
 #participation .containerCards .cardContainer:hover .cardContainer__content {
@@ -473,7 +482,7 @@ section p {
 }
 
 .paragraphDescriptionPaddingBottom {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .buttonSecundary {
@@ -503,12 +512,13 @@ section p {
 }
 .buttonSecundary:hover {
   background-color: #217370;
+  color: white;
   transition: all 500ms ease;
 }
 
 #previousEvent h4 {
   color: #ffa123;
-  font-size: 20px;
+  font-size: 22px;
   padding-bottom: 30px;
   margin: 0;
 }
@@ -895,11 +905,45 @@ footer .redes .redesIcons a:visited {
   section h2 {
     font-size: 35px;
   }
-  section p {
+  section p, section h3 {
+    font-size: 20px;
     line-height: 30px;
   }
   .containerImgLine {
     margin-bottom: 10px;
+  }
+  #home .homeLogo {
+    margin: 100px 0 50px 0;
+  }
+  #home .homeInfo {
+    max-width: 380px;
+    padding: 16px;
+    background: rgba(103, 103, 103, 0.44);
+    backdrop-filter: blur(2.47826px);
+    border-radius: 13.2174px;
+  }
+  #home .homeInfo .boxInfo p {
+    font-size: 30px;
+  }
+  #home .containerButtonRegister {
+    width: 320px;
+    height: 88px;
+    border-radius: 66px;
+    margin-top: 12px;
+  }
+  #home .containerButtonRegister .buttonRegister {
+    font-weight: 900;
+    font-size: 40px;
+  }
+  #home .containerButtonRegister .buttonRegisterHand {
+    width: 98px;
+    position: absolute;
+    right: -23px;
+    top: 10px;
+  }
+  #participation .containerCards .cardContainer .cardContainer__content .cardContainer__body {
+    font-size: 18px;
+    line-height: 28.8px;
   }
   #formInscription {
     padding: 100px 150px 100px 100px;
@@ -912,9 +956,9 @@ footer .redes .redesIcons a:visited {
   section h2 {
     font-size: 48px;
   }
-  section p {
-    font-size: 20px;
-    line-height: 32px;
+  section p, section h3 {
+    font-size: 22px;
+    line-height: 34px;
   }
   .containerImgLine {
     margin-bottom: 20px;
@@ -930,10 +974,6 @@ footer .redes .redesIcons a:visited {
   }
   #participation .containerCards .cardContainer .cardContainer__content {
     gap: 13px;
-  }
-  #participation .containerCards .cardContainer .cardContainer__content .cardContainer__body {
-    font-size: 18px;
-    line-height: 28.8px;
   }
   #alliances #boxNosApoya {
     display: flex;
@@ -1133,7 +1173,7 @@ footer .redes .redesIcons a:visited {
 }
 @media (min-width: 1200px) {
   html {
-    scroll-padding-top: 93px;
+    scroll-padding-top: 116px;
   }
   header {
     padding: 10px 20px;
@@ -1207,57 +1247,6 @@ footer .redes .redesIcons a:visited {
     right: -18px;
     top: 5px;
   }
-  #home .homeLogo {
-    margin: 70px 0 110px 0;
-  }
-  #home .homeLogo .homeLogoTittle {
-    position: absolute;
-    top: 75px;
-    left: -95px;
-    font-size: 100px;
-  }
-  #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerImg {
-    max-width: 59px;
-  }
-  #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerImg img {
-    width: 100%;
-  }
-  #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerDaleMasAfro {
-    max-width: 75px;
-  }
-  #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerDaleMasAfro h1 {
-    font-size: 32px !important;
-  }
-  #home .homeLogo .homeContainerImgYDaleMasAfro .homeContainerDaleMasAfro::before {
-    max-width: 69px;
-    max-height: 1px;
-  }
-  #home .homeInfo {
-    max-width: 380px;
-    padding: 16px;
-    background: rgba(103, 103, 103, 0.44);
-    backdrop-filter: blur(2.47826px);
-    border-radius: 13.2174px;
-  }
-  #home .homeInfo .boxInfo p {
-    font-size: 30px;
-  }
-  #home .containerButtonRegister {
-    width: 320px;
-    height: 88px;
-    border-radius: 66px;
-    margin-top: 12px;
-  }
-  #home .containerButtonRegister .buttonRegister {
-    font-weight: 900;
-    font-size: 40px;
-  }
-  #home .containerButtonRegister .buttonRegisterHand {
-    width: 98px;
-    position: absolute;
-    right: -23px;
-    top: 10px;
-  }
   #aboutDaleMasAfro, #previousEvent {
     display: flex;
     justify-content: space-between;
@@ -1277,7 +1266,7 @@ footer .redes .redesIcons a:visited {
     text-align: justify;
   }
   #aboutDaleMasAfro .boxInfo h2, #previousEvent .boxInfo h2 {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
   #aboutDaleMasAfro .boxInfo .containerAliadesPartPaises, #previousEvent .boxInfo .containerAliadesPartPaises {
     justify-content: flex-start;
