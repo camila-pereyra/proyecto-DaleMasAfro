@@ -1116,6 +1116,7 @@ footer .redes .redesIcons a:visited {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    border-radius: 16px 0px 0px 16px;
   }
   #inscriptionTransmission .expAfro::after {
     position: absolute;
@@ -1124,6 +1125,7 @@ footer .redes .redesIcons a:visited {
     content: "";
     background-color: #217370;
     opacity: 0.8;
+    border-radius: 16px 0px 0px 16px;
   }
   #inscriptionTransmission .expAfro img {
     display: inline-block;
